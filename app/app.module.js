@@ -12,8 +12,11 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./pages/home.component/home.component');
+var admin_home_component_1 = require('./pages/admin_home.component/admin_home.component');
 var wid_header_component_1 = require('./widgets/wid_header.component/wid_header.component');
 var wid_footer_component_1 = require('./widgets/wid_footer.component/wid_footer.component');
+var wid_admin_header_component_1 = require('./widgets/wid_admin_header.component/wid_admin_header.component');
+var wid_admin_footer_component_1 = require('./widgets/wid_admin_footer.component/wid_admin_footer.component');
 var mod_main_menu_component_1 = require('./modules/mod_main_menu.component/mod_main_menu.component');
 var mod_banner_component_1 = require('./modules/mod_banner.component/mod_banner.component');
 var mod_online_trip_component_1 = require('./modules/mod_online_trip.component/mod_online_trip.component');
@@ -22,6 +25,11 @@ var mod_other_products_component_1 = require('./modules/mod_other_products.compo
 var mod_news_letter_component_1 = require('./modules/mod_news_letter.component/mod_news_letter.component');
 var mod_sidebar_component_1 = require('./modules/mod_sidebar.component/mod_sidebar.component');
 var mod_list_products_component_1 = require('./modules/mod_list_products.component/mod_list_products.component');
+var mod_admin_left_sidebar_component_1 = require('./modules/mod_admin_left_sidebar.component/mod_admin_left_sidebar.component');
+var mod_admin_content_header_component_1 = require('./modules/mod_admin_content_header.component/mod_admin_content_header.component');
+var mod_admin_general_info_component_1 = require('./modules/mod_admin_general_info.component/mod_admin_general_info.component');
+var mod_admin_chart_component_1 = require('./modules/mod_admin_chart.component/mod_admin_chart.component');
+var mod_admin_info_component_1 = require('./modules/mod_admin_info.component/mod_admin_info.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,7 +39,9 @@ var AppModule = (function () {
             declarations: [app_component_1.AppComponent, wid_header_component_1.WidHeaderComponent, home_component_1.HomeComponent, mod_main_menu_component_1.ModMainMenuComponent,
                 mod_banner_component_1.ModBannerComponent, mod_online_trip_component_1.ModOnlineTripComponent, mod_products_grid_component_1.ModProductsGridComponent,
                 mod_other_products_component_1.ModOtherProductsComponent, mod_news_letter_component_1.ModNewsLetterComponent, wid_footer_component_1.WidFooterComponent,
-                mod_sidebar_component_1.ModSidebarComponent, mod_list_products_component_1.ModListProductsComponent],
+                mod_sidebar_component_1.ModSidebarComponent, mod_list_products_component_1.ModListProductsComponent, admin_home_component_1.AdminHomeComponent, mod_admin_left_sidebar_component_1.ModAdminLeftSidebarComponent,
+                wid_admin_header_component_1.WidAdminHeaderComponent, mod_admin_content_header_component_1.ModAdminContentHeaderComponent, mod_admin_general_info_component_1.ModAdminGeneralInfoComponent,
+                mod_admin_chart_component_1.ModAdminChartComponent, mod_admin_info_component_1.ModAdminInfoComponent, wid_admin_footer_component_1.WidAdminFooterComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
