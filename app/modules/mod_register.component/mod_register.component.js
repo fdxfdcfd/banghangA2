@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var ModRegisterComponent = (function () {
+    function ModRegisterComponent() {
     }
-    AppComponent = __decorate([
+    ModRegisterComponent.prototype.ngOnInit = function () { };
+    ModRegisterComponent = __decorate([
         core_1.Component({
-            selector: 'web',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'mod_register',
+            templateUrl: 'mod_register.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ModRegisterComponent);
+    return ModRegisterComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ModRegisterComponent = ModRegisterComponent;
+//# sourceMappingURL=mod_register.component.js.map
