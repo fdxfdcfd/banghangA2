@@ -32,7 +32,7 @@ import { ModMainMenuComponent } from './modules/mod_main_menu.component/mod_main
 import { ModBannerComponent } from './modules/mod_banner.component/mod_banner.component';
 import { ModOnlineTripComponent } from './modules/mod_online_trip.component/mod_online_trip.component';
 import { ModProductsGridComponent } from './modules/mod_products_grid.component/mod_products_grid.component';
-import { ModOtherProductsComponent } from './modules/mod_other_products.component/mod_other_products.component';
+import { ModSaleProductsComponent } from './modules/mod_sale_products.component/mod_sale_products.component';
 import { ModNewsLetterComponent } from './modules/mod_news_letter.component/mod_news_letter.component';
 import { ModSidebarComponent } from './modules/mod_sidebar.component/mod_sidebar.component';
 import { ModListProductsComponent } from './modules/mod_list_products.component/mod_list_products.component';
@@ -64,7 +64,7 @@ import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_man
   imports:      [ BrowserModule ],
   declarations: [ AppComponent, WidHeaderComponent, HomeComponent,AccountComponent,ProductsComponent, ModMainMenuComponent,
                 ModBannerComponent, ModOnlineTripComponent, ModProductsGridComponent, 
-                ModOtherProductsComponent, ModNewsLetterComponent, WidFooterComponent,
+                ModSaleProductsComponent, ModNewsLetterComponent, WidFooterComponent,
                 ModSidebarComponent, ModListProductsComponent, ModLoginComponent, ModCartComponent,ModContactComponent ,
                 ModRegisterComponent, AdminHomeComponent, ModAdminLeftSidebarComponent,
                 WidAdminHeaderComponent, ModAdminContentHeaderComponent, ModAdminGeneralInfoComponent,

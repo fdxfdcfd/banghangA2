@@ -35,7 +35,7 @@ var mod_main_menu_component_1 = require('./modules/mod_main_menu.component/mod_m
 var mod_banner_component_1 = require('./modules/mod_banner.component/mod_banner.component');
 var mod_online_trip_component_1 = require('./modules/mod_online_trip.component/mod_online_trip.component');
 var mod_products_grid_component_1 = require('./modules/mod_products_grid.component/mod_products_grid.component');
-var mod_other_products_component_1 = require('./modules/mod_other_products.component/mod_other_products.component');
+var mod_sale_products_component_1 = require('./modules/mod_sale_products.component/mod_sale_products.component');
 var mod_news_letter_component_1 = require('./modules/mod_news_letter.component/mod_news_letter.component');
 var mod_sidebar_component_1 = require('./modules/mod_sidebar.component/mod_sidebar.component');
 var mod_list_products_component_1 = require('./modules/mod_list_products.component/mod_list_products.component');
@@ -70,7 +70,7 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule],
             declarations: [app_component_1.AppComponent, wid_header_component_1.WidHeaderComponent, home_component_1.HomeComponent, account_component_1.AccountComponent, products_component_1.ProductsComponent, mod_main_menu_component_1.ModMainMenuComponent,
                 mod_banner_component_1.ModBannerComponent, mod_online_trip_component_1.ModOnlineTripComponent, mod_products_grid_component_1.ModProductsGridComponent,
-                mod_other_products_component_1.ModOtherProductsComponent, mod_news_letter_component_1.ModNewsLetterComponent, wid_footer_component_1.WidFooterComponent,
+                mod_sale_products_component_1.ModSaleProductsComponent, mod_news_letter_component_1.ModNewsLetterComponent, wid_footer_component_1.WidFooterComponent,
                 mod_sidebar_component_1.ModSidebarComponent, mod_list_products_component_1.ModListProductsComponent, mod_login_component_1.ModLoginComponent, mod_cart_component_1.ModCartComponent, mod_contact_component_1.ModContactComponent,
                 mod_register_component_1.ModRegisterComponent, admin_home_component_1.AdminHomeComponent, mod_admin_left_sidebar_component_1.ModAdminLeftSidebarComponent,
                 wid_admin_header_component_1.WidAdminHeaderComponent, mod_admin_content_header_component_1.ModAdminContentHeaderComponent, mod_admin_general_info_component_1.ModAdminGeneralInfoComponent,

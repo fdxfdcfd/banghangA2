@@ -9,19 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ModOtherProductsComponent = (function () {
-    function ModOtherProductsComponent() {
+var ModSaleProductsComponent = (function () {
+    function ModSaleProductsComponent() {
     }
-    ModOtherProductsComponent.prototype.ngOnInit = function () { };
-    ModOtherProductsComponent = __decorate([
+    ModSaleProductsComponent.prototype.ngOnInit = function () { };
+    ModSaleProductsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'mod_other_products',
-            templateUrl: 'mod_other_products.component.html'
+            selector: 'mod_sale_products',
+            templateUrl: 'mod_sale_products.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], ModOtherProductsComponent);
-    return ModOtherProductsComponent;
+    ], ModSaleProductsComponent);
+    return ModSaleProductsComponent;
 }());
-exports.ModOtherProductsComponent = ModOtherProductsComponent;
-//# sourceMappingURL=mod_other_products.component.js.map
+exports.ModSaleProductsComponent = ModSaleProductsComponent;
+//# sourceMappingURL=mod_sale_products.component.js.map
