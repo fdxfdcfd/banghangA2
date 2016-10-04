@@ -14,7 +14,7 @@ var AppComponent = (function () {
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'web',
+            selector: 'admin_web',
             templateUrl: './app/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
