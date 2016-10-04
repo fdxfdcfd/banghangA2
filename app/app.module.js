@@ -14,6 +14,7 @@ var app_component_1 = require('./app.component');
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
 var account_component_1 = require('./pages/account.component/account.component');
+var single_component_1 = require('./pages/single.component/single.component');
 var admin_home_component_1 = require('./pages/admin_home.component/admin_home.component');
 var admin_manager_product_component_1 = require('./pages/admin_manager_product.component/admin_manager_product.component');
 var admin_manager_customer_component_1 = require('./pages/admin_manager_customer.component/admin_manager_customer.component');
@@ -42,6 +43,9 @@ var mod_login_component_1 = require('./modules/mod_login.component/mod_login.com
 var mod_cart_component_1 = require('./modules/mod_cart.component/mod_cart.component');
 var mod_contact_component_1 = require('./modules/mod_contact.component/mod_contact.component');
 var mod_register_component_1 = require('./modules/mod_register.component/mod_register.component');
+var mod_detail_product_component_1 = require('./modules/mod_detail_product.component/mod_detail_product.component');
+var mod_related_products_component_1 = require('./modules/mod_related_products.component/mod_related_products.component');
+var mod_reviews_tabs_component_1 = require('./modules/mod_reviews_tabs.component/mod_reviews_tabs.component');
 var mod_admin_left_sidebar_component_1 = require('./modules/mod_admin_left_sidebar.component/mod_admin_left_sidebar.component');
 var mod_admin_content_header_component_1 = require('./modules/mod_admin_content_header.component/mod_admin_content_header.component');
 var mod_admin_general_info_component_1 = require('./modules/mod_admin_general_info.component/mod_admin_general_info.component');
@@ -77,7 +81,8 @@ var AppModule = (function () {
                 admin_manager_bill_component_1.AdminManagerBillComponent, mod_admin_table_manager_bill_component_1.ModAdminTableManagerBillComponent, admin_manager_news_component_1.AdminManagerNewsComponent, mod_admin_table_manager_news_component_1.ModAdminTableManagerNewsComponent,
                 admin_manager_categoty_product_component_1.AdminManagerCategoryProductComponent, mod_admin_table_manager_category_product_component_1.ModAdminTableManagerCategoryProductComponent, admin_manager_category_user_component_1.AdminManagerCategoryUserComponent,
                 mod_admin_table_manager_category_user_component_1.ModAdminTableManagerCategoryUserComponent, admin_manager_category_customer_component_1.AdminManagerCategoryCustomerComponent, mod_admin_table_manager_category_customer_component_1.ModAdminTableManagerCategoryCustomerComponent,
-                admin_manager_menu_component_1.AdminManagerMenuComponent, mod_admin_table_manager_menu_component_1.ModAdminTableManagerMenuComponent],
+                admin_manager_menu_component_1.AdminManagerMenuComponent, mod_admin_table_manager_menu_component_1.ModAdminTableManagerMenuComponent, single_component_1.SingleComponent, mod_detail_product_component_1.ModDetailProductComponent,
+                mod_reviews_tabs_component_1.ModReviewsTabsComponent, mod_related_products_component_1.ModRelatedProductsComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

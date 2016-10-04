@@ -9,6 +9,7 @@ import {AccountComponent} from './pages/account.component/account.component';
 import {CheckOutComponent} from './pages/checkout.component/checkout.component';
 import {ContactComponent} from './pages/contact.component/contact.component';
 import {RegisterComponent} from './pages/register.component/register.component';
+import { SingleComponent } from './pages/single.component/single.component';
 import { AdminHomeComponent } from './pages/admin_home.component/admin_home.component';
 import { AdminManagerProductComponent } from './pages/admin_manager_product.component/admin_manager_product.component';
 import { AdminManagerCustomerComponent } from './pages/admin_manager_customer.component/admin_manager_customer.component';
@@ -39,6 +40,9 @@ import {ModLoginComponent} from './modules/mod_login.component/mod_login.compone
 import {ModCartComponent} from './modules/mod_cart.component/mod_cart.component';
 import {ModContactComponent} from './modules/mod_contact.component/mod_contact.component';
 import {ModRegisterComponent} from './modules/mod_register.component/mod_register.component';
+import { ModDetailProductComponent } from './modules/mod_detail_product.component/mod_detail_product.component';
+import { ModRelatedProductsComponent } from './modules/mod_related_products.component/mod_related_products.component';
+import { ModReviewsTabsComponent } from './modules/mod_reviews_tabs.component/mod_reviews_tabs.component';
 import { ModAdminLeftSidebarComponent } from './modules/mod_admin_left_sidebar.component/mod_admin_left_sidebar.component';
 import { ModAdminContentHeaderComponent } from './modules/mod_admin_content_header.component/mod_admin_content_header.component';
 import { ModAdminGeneralInfoComponent } from './modules/mod_admin_general_info.component/mod_admin_general_info.component';
@@ -71,7 +75,8 @@ import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_man
                 AdminManagerBillComponent, ModAdminTableManagerBillComponent, AdminManagerNewsComponent, ModAdminTableManagerNewsComponent,
                 AdminManagerCategoryProductComponent,ModAdminTableManagerCategoryProductComponent,AdminManagerCategoryUserComponent,
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
-                AdminManagerMenuComponent, ModAdminTableManagerMenuComponent],
+                AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
+                ModReviewsTabsComponent, ModRelatedProductsComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
