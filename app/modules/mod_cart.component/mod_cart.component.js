@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var ModCartComponent = (function () {
+    function ModCartComponent() {
     }
-    AppComponent = __decorate([
+    ModCartComponent.prototype.ngOnInit = function () { };
+    ModCartComponent = __decorate([
         core_1.Component({
-            selector: 'admin_web',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'mod_cart',
+            templateUrl: 'mod_cart.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ModCartComponent);
+    return ModCartComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ModCartComponent = ModCartComponent;
+//# sourceMappingURL=mod_cart.component.js.map

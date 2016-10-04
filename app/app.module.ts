@@ -5,6 +5,10 @@ import { AppComponent }   from './app.component';
 
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
+import {AccountComponent} from './pages/account.component/account.component';
+import {CheckOutComponent} from './pages/checkout.component/checkout.component';
+import {ContactComponent} from './pages/contact.component/contact.component';
+import {RegisterComponent} from './pages/register.component/register.component';
 import { AdminHomeComponent } from './pages/admin_home.component/admin_home.component';
 import { AdminManagerProductComponent } from './pages/admin_manager_product.component/admin_manager_product.component';
 import { AdminManagerCustomerComponent } from './pages/admin_manager_customer.component/admin_manager_customer.component';
@@ -27,6 +31,10 @@ import { ModOtherProductsComponent } from './modules/mod_other_products.componen
 import { ModNewsLetterComponent } from './modules/mod_news_letter.component/mod_news_letter.component';
 import { ModSidebarComponent } from './modules/mod_sidebar.component/mod_sidebar.component';
 import { ModListProductsComponent } from './modules/mod_list_products.component/mod_list_products.component';
+import {ModLoginComponent} from './modules/mod_login.component/mod_login.component';
+import {ModCartComponent} from './modules/mod_cart.component/mod_cart.component';
+import {ModContactComponent} from './modules/mod_contact.component/mod_contact.component';
+import {ModRegisterComponent} from './modules/mod_register.component/mod_register.component';
 import { ModAdminLeftSidebarComponent } from './modules/mod_admin_left_sidebar.component/mod_admin_left_sidebar.component';
 import { ModAdminContentHeaderComponent } from './modules/mod_admin_content_header.component/mod_admin_content_header.component';
 import { ModAdminGeneralInfoComponent } from './modules/mod_admin_general_info.component/mod_admin_general_info.component';
@@ -40,14 +48,15 @@ import { ModAdminTableManagerPartnerComponent } from './modules/mod_admin_table_
 import { ModAdminTableManagerBillComponent } from './modules/mod_admin_table_manager_bill.component/mod_admin_table_manager_bill.component';
 import { ModAdminTableManagerNewsComponent } from './modules/mod_admin_table_manager_news.component/mod_admin_table_manager_news.component';
 
+
+
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
-  declarations: [ AppComponent, WidHeaderComponent, HomeComponent, ModMainMenuComponent,
+  imports:      [ BrowserModule ],
+  declarations: [ AppComponent, WidHeaderComponent, HomeComponent,AccountComponent,ProductsComponent, ModMainMenuComponent,
                 ModBannerComponent, ModOnlineTripComponent, ModProductsGridComponent, 
                 ModOtherProductsComponent, ModNewsLetterComponent, WidFooterComponent,
-                ModSidebarComponent, ModListProductsComponent,AdminHomeComponent, ModAdminLeftSidebarComponent,
+                ModSidebarComponent, ModListProductsComponent, ModLoginComponent, ModCartComponent,ModContactComponent ,
+                ModRegisterComponent, AdminHomeComponent, ModAdminLeftSidebarComponent,
                 WidAdminHeaderComponent, ModAdminContentHeaderComponent, ModAdminGeneralInfoComponent,
                 ModAdminChartComponent, ModAdminInfoComponent,WidAdminFooterComponent, AdminManagerProductComponent,
                 ModAdminTableManagerProductComponent, AdminManagerCustomerComponent,ModAdminTableManagerCustomerComponent,

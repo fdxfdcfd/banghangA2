@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var ModLoginComponent = (function () {
+    function ModLoginComponent() {
     }
-    AppComponent = __decorate([
+    ModLoginComponent.prototype.ngOnInit = function () { };
+    ModLoginComponent = __decorate([
         core_1.Component({
-            selector: 'admin_web',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'mod_login',
+            templateUrl: 'mod_login.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ModLoginComponent);
+    return ModLoginComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ModLoginComponent = ModLoginComponent;
+//# sourceMappingURL=mod_login.component.js.map

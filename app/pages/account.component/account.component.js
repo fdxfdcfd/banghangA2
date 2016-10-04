@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var AccountComponent = (function () {
+    function AccountComponent() {
     }
-    AppComponent = __decorate([
+    AccountComponent.prototype.ngOnInit = function () { };
+    AccountComponent = __decorate([
         core_1.Component({
-            selector: 'admin_web',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'account',
+            templateUrl: 'account.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AccountComponent);
+    return AccountComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AccountComponent = AccountComponent;
+//# sourceMappingURL=account.component.js.map
