@@ -5,10 +5,10 @@ import { AppComponent }   from './app.component';
 
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
-import {AccountComponent} from './pages/account.component/account.component';
-import {CheckOutComponent} from './pages/checkout.component/checkout.component';
-import {ContactComponent} from './pages/contact.component/contact.component';
-import {RegisterComponent} from './pages/register.component/register.component';
+import { AccountComponent } from './pages/account.component/account.component';
+import { CheckOutComponent } from './pages/checkout.component/checkout.component';
+import { ContactComponent } from './pages/contact.component/contact.component';
+import { RegisterComponent } from './pages/register.component/register.component';
 import { SingleComponent } from './pages/single.component/single.component';
 import { AdminHomeComponent } from './pages/admin_home.component/admin_home.component';
 import { AdminManagerProductComponent } from './pages/admin_manager_product.component/admin_manager_product.component';
@@ -36,10 +36,10 @@ import { ModSaleProductsComponent } from './modules/mod_sale_products.component/
 import { ModNewsLetterComponent } from './modules/mod_news_letter.component/mod_news_letter.component';
 import { ModSidebarComponent } from './modules/mod_sidebar.component/mod_sidebar.component';
 import { ModListProductsComponent } from './modules/mod_list_products.component/mod_list_products.component';
-import {ModLoginComponent} from './modules/mod_login.component/mod_login.component';
-import {ModCartComponent} from './modules/mod_cart.component/mod_cart.component';
-import {ModContactComponent} from './modules/mod_contact.component/mod_contact.component';
-import {ModRegisterComponent} from './modules/mod_register.component/mod_register.component';
+import { ModLoginComponent } from './modules/mod_login.component/mod_login.component';
+import { ModCartComponent } from './modules/mod_cart.component/mod_cart.component';
+import { ModContactComponent } from './modules/mod_contact.component/mod_contact.component';
+import { ModRegisterComponent } from './modules/mod_register.component/mod_register.component';
 import { ModDetailProductComponent } from './modules/mod_detail_product.component/mod_detail_product.component';
 import { ModRelatedProductsComponent } from './modules/mod_related_products.component/mod_related_products.component';
 import { ModReviewsTabsComponent } from './modules/mod_reviews_tabs.component/mod_reviews_tabs.component';
@@ -76,7 +76,7 @@ import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_man
                 AdminManagerCategoryProductComponent,ModAdminTableManagerCategoryProductComponent,AdminManagerCategoryUserComponent,
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
-                ModReviewsTabsComponent, ModRelatedProductsComponent],
+                ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

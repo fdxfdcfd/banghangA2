@@ -743,7 +743,7 @@ ul.f_nav li{
 ul.f_nav li a{
     list-style-type: none;
     font-size: 14px;
-    color: #B3B3B3;
+    color: #808080;
 	text-transform:capitalize;
 }
 .cards.text-center {
@@ -911,7 +911,7 @@ p.back{
 }
 p.back a {
 	font-size: 14px;
-    color: #B9B4B5;
+    color: #808080;
 }
 .labout {
 	display: block;
@@ -1050,20 +1050,9 @@ h3.new-models {
 	font-size: 0.85em;
 	font-weight: bold;
 }
-p.title {
-	color: #000;
-	font-size: 0.95em;
-	font-weight: bold;
-}
 .cart-left {
 	float: left;
 	margin-right: 2.6%;
-}
-p.title {
-	color: #000;
-	font-size: 0.95em;
-	font-weight: 700;
-	margin:0;
 }
 .pricey {
 	float: right;
@@ -1366,11 +1355,6 @@ h3.new-models {
 	top: 12em;
 	left: 6.2em;
 }
-p.title {
-	color: #000;
-	font-size: 0.95em;
-	font-weight: bold;
-}
 .cart-left {
 	float: left;
 	margin-right: 2.6%;
@@ -1459,7 +1443,7 @@ li.home a {
     font-size: 16px;
 }
 .login-left p, .login-right p {
-	color: #CAC9C9;
+	color: #808080;
 	display: block;
 	font-size: 1.1em;
 	margin: 0 0 2em 0;
@@ -1549,7 +1533,7 @@ ul.previous{
 }
 ul.previous li a{
 	    font-size: 14px;
-    color: #B9B4B5;
+    color: #808080;
 }
 .dreamcrub{
 	    margin: 15px 0 60px 0;
@@ -1626,7 +1610,7 @@ ul.women_pagenation li a:hover{
     padding-bottom: 18px;
 }
 .reg p{
-	color: #CAC9C9;
+	color: #808080;
 	margin: 0px 0 0 0;
 	font-size: 14px;
 	line-height: 1.8em;
@@ -1726,7 +1710,7 @@ p.click a:hover{
 	margin-left: 3%;
 }
 .reg-right p{
-	color: #CAC9C9;
+	color: #808080;
 	margin: 0 0 30px 0;
 	font-size: 14px;
 	line-height: 1.8em;
@@ -2069,7 +2053,7 @@ p.tab-text {
     margin-top: 16px;
     font-size: 13px;
     line-height: 23px;
-    color: #CAC9C9;
+    color: #808080;
 }
 .dress-name span {
 	float: right;
@@ -3055,4 +3039,60 @@ p.right {
 	p.tab-text {
 		font-size: 13px;
 	}
+}
+
+
+
+.single-shop-product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.product-option-shop {
+    margin-top: 15px;
+}
+
+.single-shop-product {
+	margin-bottom: 50px
+}
+
+.add-to-cart-button {
+	color: #fff;
+    background: #816263;
+    padding: 8px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.add-to-cart-button:hover {
+	color: #fff;
+    background: #000;
+    text-decoration: none;
+}
+.product-option-shop {
+	text-align: center;
+}
+
+.info-product {
+	margin: 15px 0px;
+}
+
+.info-product a {
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.info-product ins {
+	float: right;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+p.detail {
+	max-width: 300px;
+    min-height: 25px;
+    margin: 15px auto;
+    color: #999;
+	text-align: center;
 }

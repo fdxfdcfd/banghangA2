@@ -14,6 +14,9 @@ var app_component_1 = require('./app.component');
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
 var account_component_1 = require('./pages/account.component/account.component');
+var checkout_component_1 = require('./pages/checkout.component/checkout.component');
+var contact_component_1 = require('./pages/contact.component/contact.component');
+var register_component_1 = require('./pages/register.component/register.component');
 var single_component_1 = require('./pages/single.component/single.component');
 var admin_home_component_1 = require('./pages/admin_home.component/admin_home.component');
 var admin_manager_product_component_1 = require('./pages/admin_manager_product.component/admin_manager_product.component');
@@ -82,7 +85,7 @@ var AppModule = (function () {
                 admin_manager_categoty_product_component_1.AdminManagerCategoryProductComponent, mod_admin_table_manager_category_product_component_1.ModAdminTableManagerCategoryProductComponent, admin_manager_category_user_component_1.AdminManagerCategoryUserComponent,
                 mod_admin_table_manager_category_user_component_1.ModAdminTableManagerCategoryUserComponent, admin_manager_category_customer_component_1.AdminManagerCategoryCustomerComponent, mod_admin_table_manager_category_customer_component_1.ModAdminTableManagerCategoryCustomerComponent,
                 admin_manager_menu_component_1.AdminManagerMenuComponent, mod_admin_table_manager_menu_component_1.ModAdminTableManagerMenuComponent, single_component_1.SingleComponent, mod_detail_product_component_1.ModDetailProductComponent,
-                mod_reviews_tabs_component_1.ModReviewsTabsComponent, mod_related_products_component_1.ModRelatedProductsComponent],
+                mod_reviews_tabs_component_1.ModReviewsTabsComponent, mod_related_products_component_1.ModRelatedProductsComponent, contact_component_1.ContactComponent, checkout_component_1.CheckOutComponent, register_component_1.RegisterComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
