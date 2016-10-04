@@ -17,6 +17,9 @@ import { AdminManagerPromotionComponent } from './pages/admin_manager_promotion.
 import { AdminManagerPartnerComponent  } from './pages/admin_manager_partner.component/admin_manager_partner.component';
 import { AdminManagerBillComponent } from './pages/admin_manager_bill.component/admin_manager_bill.component';
 import { AdminManagerNewsComponent } from './pages/admin_manager_news.component/admin_manager_news.component';
+import { AdminManagerCategoryProductComponent } from './pages/admin_manager_category_product.component/admin_manager_categoty_product.component';
+import { AdminManagerCategoryUserComponent } from './pages/admin_manager_category_user.component/admin_manager_category_user.component';
+import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_category_customer.component/admin_manager_category_customer.component';
 
 import {  WidHeaderComponent  } from './widgets/wid_header.component/wid_header.component';
 import {  WidFooterComponent  } from './widgets/wid_footer.component/wid_footer.component';
@@ -47,8 +50,9 @@ import { ModAdminTableManagerPromotionComponent } from './modules/mod_admin_tabl
 import { ModAdminTableManagerPartnerComponent } from './modules/mod_admin_table_manager_partner.component/mod_admin_table_manager_partner.component';
 import { ModAdminTableManagerBillComponent } from './modules/mod_admin_table_manager_bill.component/mod_admin_table_manager_bill.component';
 import { ModAdminTableManagerNewsComponent } from './modules/mod_admin_table_manager_news.component/mod_admin_table_manager_news.component';
-
-
+import { ModAdminTableManagerCategoryProductComponent } from './modules/mod_admin_table_manager_category_product.component/mod_admin_table_manager_category_product.component';
+import { ModAdminTableManagerCategoryUserComponent } from './modules/mod_admin_table_manager_category_user.component/mod_admin_table_manager_category_user.component';
+import { ModAdminTableManagerCategoryCustomerComponent } from './modules/mod_admin_table_manager_category_customer.component/mod_admin_table_manager_category_customer.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -62,7 +66,9 @@ import { ModAdminTableManagerNewsComponent } from './modules/mod_admin_table_man
                 ModAdminTableManagerProductComponent, AdminManagerCustomerComponent,ModAdminTableManagerCustomerComponent,
                 AdminManagerUserComponent,AdminManagerUserComponent, ModAdminTableManagerUserComponent,AdminManagerPromotionComponent,
                 ModAdminTableManagerPromotionComponent, AdminManagerPartnerComponent, ModAdminTableManagerPartnerComponent,
-                AdminManagerBillComponent, ModAdminTableManagerBillComponent, AdminManagerNewsComponent, ModAdminTableManagerNewsComponent],
+                AdminManagerBillComponent, ModAdminTableManagerBillComponent, AdminManagerNewsComponent, ModAdminTableManagerNewsComponent,
+                AdminManagerCategoryProductComponent,ModAdminTableManagerCategoryProductComponent,AdminManagerCategoryUserComponent,
+                ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

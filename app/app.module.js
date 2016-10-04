@@ -22,6 +22,9 @@ var admin_manager_promotion_component_1 = require('./pages/admin_manager_promoti
 var admin_manager_partner_component_1 = require('./pages/admin_manager_partner.component/admin_manager_partner.component');
 var admin_manager_bill_component_1 = require('./pages/admin_manager_bill.component/admin_manager_bill.component');
 var admin_manager_news_component_1 = require('./pages/admin_manager_news.component/admin_manager_news.component');
+var admin_manager_categoty_product_component_1 = require('./pages/admin_manager_category_product.component/admin_manager_categoty_product.component');
+var admin_manager_category_user_component_1 = require('./pages/admin_manager_category_user.component/admin_manager_category_user.component');
+var admin_manager_category_customer_component_1 = require('./pages/admin_manager_category_customer.component/admin_manager_category_customer.component');
 var wid_header_component_1 = require('./widgets/wid_header.component/wid_header.component');
 var wid_footer_component_1 = require('./widgets/wid_footer.component/wid_footer.component');
 var wid_admin_header_component_1 = require('./widgets/wid_admin_header.component/wid_admin_header.component');
@@ -50,6 +53,9 @@ var mod_admin_table_manager_promotion_component_1 = require('./modules/mod_admin
 var mod_admin_table_manager_partner_component_1 = require('./modules/mod_admin_table_manager_partner.component/mod_admin_table_manager_partner.component');
 var mod_admin_table_manager_bill_component_1 = require('./modules/mod_admin_table_manager_bill.component/mod_admin_table_manager_bill.component');
 var mod_admin_table_manager_news_component_1 = require('./modules/mod_admin_table_manager_news.component/mod_admin_table_manager_news.component');
+var mod_admin_table_manager_category_product_component_1 = require('./modules/mod_admin_table_manager_category_product.component/mod_admin_table_manager_category_product.component');
+var mod_admin_table_manager_category_user_component_1 = require('./modules/mod_admin_table_manager_category_user.component/mod_admin_table_manager_category_user.component');
+var mod_admin_table_manager_category_customer_component_1 = require('./modules/mod_admin_table_manager_category_customer.component/mod_admin_table_manager_category_customer.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -66,7 +72,9 @@ var AppModule = (function () {
                 mod_admin_table_manager_product_component_1.ModAdminTableManagerProductComponent, admin_manager_customer_component_1.AdminManagerCustomerComponent, mod_admin_table_manager_customer_component_1.ModAdminTableManagerCustomerComponent,
                 admin_manager_user_component_1.AdminManagerUserComponent, admin_manager_user_component_1.AdminManagerUserComponent, mod_admin_table_manager_user_component_1.ModAdminTableManagerUserComponent, admin_manager_promotion_component_1.AdminManagerPromotionComponent,
                 mod_admin_table_manager_promotion_component_1.ModAdminTableManagerPromotionComponent, admin_manager_partner_component_1.AdminManagerPartnerComponent, mod_admin_table_manager_partner_component_1.ModAdminTableManagerPartnerComponent,
-                admin_manager_bill_component_1.AdminManagerBillComponent, mod_admin_table_manager_bill_component_1.ModAdminTableManagerBillComponent, admin_manager_news_component_1.AdminManagerNewsComponent, mod_admin_table_manager_news_component_1.ModAdminTableManagerNewsComponent],
+                admin_manager_bill_component_1.AdminManagerBillComponent, mod_admin_table_manager_bill_component_1.ModAdminTableManagerBillComponent, admin_manager_news_component_1.AdminManagerNewsComponent, mod_admin_table_manager_news_component_1.ModAdminTableManagerNewsComponent,
+                admin_manager_categoty_product_component_1.AdminManagerCategoryProductComponent, mod_admin_table_manager_category_product_component_1.ModAdminTableManagerCategoryProductComponent, admin_manager_category_user_component_1.AdminManagerCategoryUserComponent,
+                mod_admin_table_manager_category_user_component_1.ModAdminTableManagerCategoryUserComponent, admin_manager_category_customer_component_1.AdminManagerCategoryCustomerComponent, mod_admin_table_manager_category_customer_component_1.ModAdminTableManagerCategoryCustomerComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
