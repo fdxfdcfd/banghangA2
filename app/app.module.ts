@@ -20,6 +20,7 @@ import { AdminManagerNewsComponent } from './pages/admin_manager_news.component/
 import { AdminManagerCategoryProductComponent } from './pages/admin_manager_category_product.component/admin_manager_categoty_product.component';
 import { AdminManagerCategoryUserComponent } from './pages/admin_manager_category_user.component/admin_manager_category_user.component';
 import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_category_customer.component/admin_manager_category_customer.component';
+import { AdminManagerMenuComponent } from './pages/admin_manager_menu.component/admin_manager_menu.component';
 
 import {  WidHeaderComponent  } from './widgets/wid_header.component/wid_header.component';
 import {  WidFooterComponent  } from './widgets/wid_footer.component/wid_footer.component';
@@ -53,6 +54,7 @@ import { ModAdminTableManagerNewsComponent } from './modules/mod_admin_table_man
 import { ModAdminTableManagerCategoryProductComponent } from './modules/mod_admin_table_manager_category_product.component/mod_admin_table_manager_category_product.component';
 import { ModAdminTableManagerCategoryUserComponent } from './modules/mod_admin_table_manager_category_user.component/mod_admin_table_manager_category_user.component';
 import { ModAdminTableManagerCategoryCustomerComponent } from './modules/mod_admin_table_manager_category_customer.component/mod_admin_table_manager_category_customer.component';
+import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_manager_menu.component/mod_admin_table_manager_menu.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -68,7 +70,8 @@ import { ModAdminTableManagerCategoryCustomerComponent } from './modules/mod_adm
                 ModAdminTableManagerPromotionComponent, AdminManagerPartnerComponent, ModAdminTableManagerPartnerComponent,
                 AdminManagerBillComponent, ModAdminTableManagerBillComponent, AdminManagerNewsComponent, ModAdminTableManagerNewsComponent,
                 AdminManagerCategoryProductComponent,ModAdminTableManagerCategoryProductComponent,AdminManagerCategoryUserComponent,
-                ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent],
+                ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
+                AdminManagerMenuComponent, ModAdminTableManagerMenuComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
