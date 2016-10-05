@@ -9,17 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var ModAdminProductFormComponent = (function () {
+    function ModAdminProductFormComponent() {
     }
-    AppComponent = __decorate([
+    ModAdminProductFormComponent.prototype.ngOnInit = function () { };
+    ModAdminProductFormComponent = __decorate([
         core_1.Component({
-            selector: 'admin_web',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'mod_admin_product_form',
+            templateUrl: 'mod_admin_product_form.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ModAdminProductFormComponent);
+    return ModAdminProductFormComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ModAdminProductFormComponent = ModAdminProductFormComponent;
+//# sourceMappingURL=mod_admin_product_form.component.js.map

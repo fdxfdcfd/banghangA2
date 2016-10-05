@@ -22,6 +22,7 @@ import { AdminManagerCategoryProductComponent } from './pages/admin_manager_cate
 import { AdminManagerCategoryUserComponent } from './pages/admin_manager_category_user.component/admin_manager_category_user.component';
 import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_category_customer.component/admin_manager_category_customer.component';
 import { AdminManagerMenuComponent } from './pages/admin_manager_menu.component/admin_manager_menu.component';
+import { AdminProductFormComponent } from './pages/admin_product_form.component/admin_product_form.component';
 
 import {  WidHeaderComponent  } from './widgets/wid_header.component/wid_header.component';
 import {  WidFooterComponent  } from './widgets/wid_footer.component/wid_footer.component';
@@ -59,6 +60,7 @@ import { ModAdminTableManagerCategoryProductComponent } from './modules/mod_admi
 import { ModAdminTableManagerCategoryUserComponent } from './modules/mod_admin_table_manager_category_user.component/mod_admin_table_manager_category_user.component';
 import { ModAdminTableManagerCategoryCustomerComponent } from './modules/mod_admin_table_manager_category_customer.component/mod_admin_table_manager_category_customer.component';
 import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_manager_menu.component/mod_admin_table_manager_menu.component';
+import { ModAdminProductFormComponent } from './modules/mod_admin_product_form.component/mod_admin_product_form.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -76,7 +78,8 @@ import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_man
                 AdminManagerCategoryProductComponent,ModAdminTableManagerCategoryProductComponent,AdminManagerCategoryUserComponent,
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
-                ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent],
+                ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
+                AdminProductFormComponent, ModAdminProductFormComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
