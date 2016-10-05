@@ -8,6 +8,7 @@ export class Product{
     productnew: number;
     views: number;
     status: number;
+    inventory:number;
     productimg:string;
     promotioninfo: string;
     created: Date;

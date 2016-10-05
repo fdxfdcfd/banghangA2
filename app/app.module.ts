@@ -23,6 +23,7 @@ import { AdminManagerCategoryUserComponent } from './pages/admin_manager_categor
 import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_category_customer.component/admin_manager_category_customer.component';
 import { AdminManagerMenuComponent } from './pages/admin_manager_menu.component/admin_manager_menu.component';
 import { AdminProductFormComponent } from './pages/admin_product_form.component/admin_product_form.component';
+import { AdminUserFormComponent } from './pages/admin_user_form.component/admin_user_form.component';
 
 import {  WidHeaderComponent  } from './widgets/wid_header.component/wid_header.component';
 import {  WidFooterComponent  } from './widgets/wid_footer.component/wid_footer.component';
@@ -61,6 +62,7 @@ import { ModAdminTableManagerCategoryUserComponent } from './modules/mod_admin_t
 import { ModAdminTableManagerCategoryCustomerComponent } from './modules/mod_admin_table_manager_category_customer.component/mod_admin_table_manager_category_customer.component';
 import { ModAdminTableManagerMenuComponent } from './modules/mod_admin_table_manager_menu.component/mod_admin_table_manager_menu.component';
 import { ModAdminProductFormComponent } from './modules/mod_admin_product_form.component/mod_admin_product_form.component';
+import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.component/mod_admin_user_form.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -79,7 +81,7 @@ import { ModAdminProductFormComponent } from './modules/mod_admin_product_form.c
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
-                AdminProductFormComponent, ModAdminProductFormComponent],
+                AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
