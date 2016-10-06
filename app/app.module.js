@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
@@ -74,7 +75,8 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
+            imports: [platform_browser_1.BrowserModule,
+                app_routing_1.routing],
             declarations: [app_component_1.AppComponent, wid_header_component_1.WidHeaderComponent, home_component_1.HomeComponent, account_component_1.AccountComponent, products_component_1.ProductsComponent, mod_main_menu_component_1.ModMainMenuComponent,
                 mod_banner_component_1.ModBannerComponent, mod_online_trip_component_1.ModOnlineTripComponent, mod_products_grid_component_1.ModProductsGridComponent,
                 mod_sale_products_component_1.ModSaleProductsComponent, mod_news_letter_component_1.ModNewsLetterComponent, wid_footer_component_1.WidFooterComponent,

@@ -65,7 +65,8 @@ import { ModAdminProductFormComponent } from './modules/mod_admin_product_form.c
 import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.component/mod_admin_user_form.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule,
+                routing ],
   declarations: [ AppComponent, WidHeaderComponent, HomeComponent,AccountComponent,ProductsComponent, ModMainMenuComponent,
                 ModBannerComponent, ModOnlineTripComponent, ModProductsGridComponent, 
                 ModSaleProductsComponent, ModNewsLetterComponent, WidFooterComponent,
