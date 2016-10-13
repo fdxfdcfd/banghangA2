@@ -11,6 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ModRelatedProductsComponent = (function () {
     function ModRelatedProductsComponent() {
+        this.list_product = [
+            { product_id: '1', product_name: 'white T-Shirt', product_img: 'images/p1.jpg', price: 300 },
+            { product_id: '2', product_name: 'yellow T-Shirt', product_img: 'images/p2.jpg', price: 500 },
+            { product_id: '3', product_name: 'black skirt', product_img: 'images/p3.jpg', price: 250 },
+        ];
     }
     ModRelatedProductsComponent.prototype.ngOnInit = function () { };
     ModRelatedProductsComponent = __decorate([

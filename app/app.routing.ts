@@ -39,12 +39,18 @@ const appRoutes: Routes = [
   { path: 'quan-ly-menu', component: AdminManagerMenuComponent },
   { path: 'them-san-pham', component: AdminProductFormComponent },
   { path: 'them-nhan-vien', component: AdminUserFormComponent },
+  
   { path: 'admin', component: AdminHomeComponent },
-  {
-  path: '',
-  redirectTo: 'admin',
-  pathMatch: 'full'
-},
+  { path: 'home', component: HomeComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'single', component: SingleComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'checkout', component: CheckOutComponent },
+  { path: 'register', component: RegisterComponent },
+  
+
+  { path: '', redirectTo: 'admin', pathMatch: 'full' },
 ];
 
 export const appRoutingProviders: any[] = [

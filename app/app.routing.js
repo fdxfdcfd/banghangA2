@@ -1,5 +1,13 @@
 "use strict";
 var router_1 = require('@angular/router');
+//pages
+var home_component_1 = require('./pages/home.component/home.component');
+var products_component_1 = require('./pages/products.component/products.component');
+var account_component_1 = require('./pages/account.component/account.component');
+var checkout_component_1 = require('./pages/checkout.component/checkout.component');
+var contact_component_1 = require('./pages/contact.component/contact.component');
+var register_component_1 = require('./pages/register.component/register.component');
+var single_component_1 = require('./pages/single.component/single.component');
 var admin_home_component_1 = require('./pages/admin_home.component/admin_home.component');
 var admin_manager_product_component_1 = require('./pages/admin_manager_product.component/admin_manager_product.component');
 var admin_manager_customer_component_1 = require('./pages/admin_manager_customer.component/admin_manager_customer.component');
@@ -29,11 +37,14 @@ var appRoutes = [
     { path: 'them-san-pham', component: admin_product_form_component_1.AdminProductFormComponent },
     { path: 'them-nhan-vien', component: admin_user_form_component_1.AdminUserFormComponent },
     { path: 'admin', component: admin_home_component_1.AdminHomeComponent },
-    {
-        path: '',
-        redirectTo: 'admin',
-        pathMatch: 'full'
-    },
+    { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'products', component: products_component_1.ProductsComponent },
+    { path: 'contact', component: contact_component_1.ContactComponent },
+    { path: 'single', component: single_component_1.SingleComponent },
+    { path: 'account', component: account_component_1.AccountComponent },
+    { path: 'checkout', component: checkout_component_1.CheckOutComponent },
+    { path: 'register', component: register_component_1.RegisterComponent },
+    { path: '', redirectTo: 'admin', pathMatch: 'full' },
 ];
 exports.appRoutingProviders = [];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);
