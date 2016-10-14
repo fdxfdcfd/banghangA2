@@ -44,7 +44,7 @@ var appRoutes = [
     { path: 'account', component: account_component_1.AccountComponent },
     { path: 'checkout', component: checkout_component_1.CheckOutComponent },
     { path: 'register', component: register_component_1.RegisterComponent },
-    { path: '', redirectTo: 'admin', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 exports.appRoutingProviders = [];
 exports.routing = router_1.RouterModule.forRoot(appRoutes);

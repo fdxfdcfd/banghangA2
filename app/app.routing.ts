@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   
 
-  { path: '', redirectTo: 'admin', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 export const appRoutingProviders: any[] = [
