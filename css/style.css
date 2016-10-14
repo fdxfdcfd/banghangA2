@@ -1364,6 +1364,7 @@ p.title {
 	font-size: 0.95em;
 	font-weight: 700;
 	margin:0;
+	text-transform: capitalize;
 }
 .pricey {
 	float: right;
@@ -3089,7 +3090,7 @@ p.right {
 	font-weight: bold;
 }
 
-p.detail {
+p.brief {
 	max-width: 300px;
     min-height: 25px;
     margin: 15px auto;
