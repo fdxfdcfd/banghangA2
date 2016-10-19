@@ -1,19 +1,9 @@
 export class Product{
     product_id: string;
-    productname:string;
-    product_category_id: string;
-    brief: string;
-    detail:string;
+    product_name:string;
     price: number;
-    productnew: number;
-    views: number;
-    status: number;
-    inventory:number;
-    productimg:string;
-    promotioninfo: string;
-    created: Date;
-    user_updated:number;
-    updated: Date;
+    product_img:string;
+    brief: string;
     constructor(){
 
     }
