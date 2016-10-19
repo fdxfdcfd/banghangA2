@@ -697,12 +697,12 @@ a.like_name {
 }
 .join input[type="text"] {
 	width: 48%;
-    color: #C3C3C3;
+    color: #808080;
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 15px;
     padding: 10px 10px;
-    border: 1px solid #E4E4E4;
+    border: 1px solid #CACACA;
     outline: none;
     font-family: 'Lato-Regular';
     text-align: left;
@@ -1481,15 +1481,15 @@ li.home a {
 	text-transform: uppercase;
 }
 .login-right input[type="text"] {
-	border: 1px solid #EEE;
-	outline-color:#CACACA;
+	border: 1px solid #CACACA;
+	outline-color: #808080;
 	width: 96%;
 	font-size:13px;
 	padding: 8px;
 }
 .login-right input[type="password"] {
-	border: 1px solid #EEE;
-	outline-color:#CACACA;
+	border: 1px solid #CACACA;
+	outline-color: #808080;
 	width: 96%;
 	font-size:13px;
 	padding: 8px;
@@ -1659,8 +1659,8 @@ ul.women_pagenation li a:hover{
 	padding: 8px;
 	font-size: 14px;
 	font-weight: 400;
-	border: 1px solid #e6e6e6;
-	outline: none;
+	border: 1px solid #cacaca;
+	outline-color: #808080;
 	color: #000;
 }
 .reg-form{
@@ -1739,8 +1739,8 @@ p.click a:hover{
 	margin: 0 23px 23px 0;
 	font-size:14px;
 	padding: 12px 10px;
-	outline: none;
-	border: 1px solid #e8e8e8;
+	outline-color: #808080;
+	border: 1px solid #CACACA;
 }
 .contact-right textarea{
 	width: 100%;
@@ -1749,8 +1749,8 @@ p.click a:hover{
 	resize: none;
 	height: 185px;
 	padding: 12px;
-	outline: none;
-	border: 1px solid #e8e8e8;
+	outline-color: #808080;
+	border: 1px solid #CACACA;
 }
 .contact-form input[type=submit] {
 	border:none;
