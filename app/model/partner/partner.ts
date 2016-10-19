@@ -1,11 +1,11 @@
 export class Partner{
     partner_id:string;
-    partnername:string;
-    partnerimg:string;
+    partner_name:string;
+    partner_img:string;
     brief:string;
     detail:string;
-    created:Date;
-    updated:Date;
+    created:number;
+    updated:number;
     constructor(){
     }
 }

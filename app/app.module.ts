@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders }  from './app.routing';
 import { AppComponent }   from './app.component';
 
+import { ProductService } from './services/service_product';
+
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
 import { AccountComponent } from './pages/account.component/account.component';
@@ -83,6 +85,7 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
                 AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent],
+  providers: [ ProductService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

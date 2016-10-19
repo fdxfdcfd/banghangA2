@@ -9,16 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var service_product_1 = require('../../services/service_product');
 var ModRelatedProductsComponent = (function () {
-    function ModRelatedProductsComponent() {
-        // this.list_product = [
-        //     {product_id: '1', product_name: 'white T-Shirt', product_img: 'images/p1.jpg', price: 300,
-        //      brief: 'Wattle seed bunya nuts spring onion okra garlic bitterleaf zucchini'},
-        //     {product_id: '2', product_name: 'yellow T-Shirt', product_img: 'images/p2.jpg', price: 500,
-        //      brief: 'A classic fifties shape is updated with the Floral Fit-and-Flare Dress from Wallis'},
-        //     {product_id: '3', product_name: 'black skirt', product_img: 'images/p3.jpg', price: 250,
-        //      brief: 'The Keep On Swinging Wrap Dress from Lioness is crafted from a silky-smooth and lightweight fabric'},
-        // ]
+    function ModRelatedProductsComponent(service_product) {
+        this.list_product_display = service_product.getListProduct();
     }
     ModRelatedProductsComponent.prototype.ngOnInit = function () { };
     ModRelatedProductsComponent = __decorate([
@@ -27,7 +21,7 @@ var ModRelatedProductsComponent = (function () {
             selector: 'mod_related_products',
             templateUrl: 'mod_related_products.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_product_1.ProductService])
     ], ModRelatedProductsComponent);
     return ModRelatedProductsComponent;
 }());

@@ -7,9 +7,9 @@ export class Product{
     detail: string;
     user_id_updated: number;
     user_id_created: number;
-    inventory:number;
-    created:Date;
-    updated:Date;
+    inventory: number;
+    created: number;
+    updated: number;
     constructor(){
 
     }

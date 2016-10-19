@@ -9,22 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var service_product_1 = require('../../services/service_product');
 var ModListProductsComponent = (function () {
-    function ModListProductsComponent() {
-        // this.list_product = [
-        //     {product_id: '1', product_name: 'white T-Shirt', product_img: 'images/p1.jpg', price: 300,
-        //      brief: 'Wattle seed bunya nuts spring onion okra garlic bitterleaf zucchini'},
-        //     {product_id: '2', product_name: 'yellow T-Shirt', product_img: 'images/p2.jpg', price: 500,
-        //      brief: 'A classic fifties shape is updated with the Floral Fit-and-Flare Dress from Wallis'},
-        //     {product_id: '3', product_name: 'black skirt', product_img: 'images/p3.jpg', price: 250,
-        //      brief: 'The Keep On Swinging Wrap Dress from Lioness is crafted from a silky-smooth and lightweight fabric'},
-        //     {product_id: '4', product_name: 'red dress', product_img: 'images/p4.jpg', price: 450,
-        //      brief: 'Add a retro vibe to your wardrobe with the Meeka Ruffle Dress from Atmos&Here'},
-        //     {product_id: '5', product_name: 'gray dress', product_img: 'images/p5.jpg', price: 367,
-        //      brief: 'Wrap dresses are here to stay, so look to the Atmos&Here Antonia Wrap Dress'},
-        //     {product_id: '6', product_name: 'blue Shirt', product_img: 'images/p6.jpg', price: 352, 
-        //      brief: 'The Rosie Wrap Dress from Atmos&Here is crafted from a lightweight fabric with a romantic floral print'},
-        // ]
+    function ModListProductsComponent(service_product) {
+        var _this = this;
+        this.service_product = service_product;
+        //Sắp xếp giá tăng dần
+        this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display = list.sort(function (item1, item2) { return item1.price - item2.price; }); });
     }
     ModListProductsComponent.prototype.ngOnInit = function () { };
     ModListProductsComponent = __decorate([
@@ -33,7 +24,7 @@ var ModListProductsComponent = (function () {
             selector: 'mod_list_products',
             templateUrl: 'mod_list_products.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_product_1.ProductService])
     ], ModListProductsComponent);
     return ModListProductsComponent;
 }());

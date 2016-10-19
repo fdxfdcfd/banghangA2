@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var service_product_1 = require('../../services/service_product');
-var ModProductsGridComponent = (function () {
-    function ModProductsGridComponent(service_product) {
-        this.list_product_display = service_product.getListProduct();
+var mock_product_1 = require('../model/product/mock_product');
+var ProductService = (function () {
+    function ProductService() {
     }
-    ModProductsGridComponent.prototype.ngOnInit = function () { };
-    ModProductsGridComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'mod_products_grid',
-            templateUrl: 'mod_products_grid.component.html'
-        }), 
-        __metadata('design:paramtypes', [service_product_1.ProductService])
-    ], ModProductsGridComponent);
-    return ModProductsGridComponent;
+    ProductService.prototype.getListProduct = function () {
+        return mock_product_1.list_product;
+    };
+    ProductService.prototype.getListProductPromise = function () {
+        return Promise.resolve(mock_product_1.list_product);
+    };
+    ProductService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], ProductService);
+    return ProductService;
 }());
-exports.ModProductsGridComponent = ModProductsGridComponent;
-//# sourceMappingURL=mod_products_grid.component.js.map
+exports.ProductService = ProductService;
+//# sourceMappingURL=service_product.js.map

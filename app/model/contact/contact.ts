@@ -1,10 +1,10 @@
 export class Contact{
     contact_id:string;
-    contactname:string;
+    contact_name:string;
     title:string;
     content:string;
-    created:Date;
-    updated:Date;
+    created:number;
+    updated:number;
     user_updated:number;
     constructor(){
     }
