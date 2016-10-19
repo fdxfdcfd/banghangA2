@@ -4,6 +4,12 @@ export class Product{
     price: number;
     product_img:string;
     brief: string;
+    detail: string;
+    user_id_updated: number;
+    user_id_created: number;
+    inventory:number;
+    created:Date;
+    updated:Date;
     constructor(){
 
     }

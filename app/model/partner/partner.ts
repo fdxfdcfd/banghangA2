@@ -4,6 +4,8 @@ export class Partner{
     partnerimg:string;
     brief:string;
     detail:string;
+    created:Date;
+    updated:Date;
     constructor(){
     }
 }
