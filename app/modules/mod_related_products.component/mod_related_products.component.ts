@@ -10,8 +10,10 @@ import { ProductService } from '../../services/service_product';
 })
 export class ModRelatedProductsComponent implements OnInit {
     list_product_display: Product[];
-    constructor(service_product: ProductService) {
-        this.list_product_display = service_product.getListProduct();
+    constructor(private service_product: ProductService) {
+        //cate_id = cate_id của sản phẩm tại trang single
+        this.service_product.getListProductPromise().then(list => this.list_product_display 
+        = list.filter(item => item.cate_id == '2').slice(0,3));
     }
     ngOnInit() { }
 }

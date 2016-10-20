@@ -12,7 +12,11 @@ var core_1 = require('@angular/core');
 var service_product_1 = require('../../services/service_product');
 var ModRelatedProductsComponent = (function () {
     function ModRelatedProductsComponent(service_product) {
-        this.list_product_display = service_product.getListProduct();
+        var _this = this;
+        this.service_product = service_product;
+        //cate_id = cate_id của sản phẩm tại trang single
+        this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
+            = list.filter(function (item) { return item.cate_id == '2'; }).slice(0, 3); });
     }
     ModRelatedProductsComponent.prototype.ngOnInit = function () { };
     ModRelatedProductsComponent = __decorate([

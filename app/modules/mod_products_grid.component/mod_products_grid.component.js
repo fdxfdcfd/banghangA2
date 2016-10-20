@@ -12,7 +12,10 @@ var core_1 = require('@angular/core');
 var service_product_1 = require('../../services/service_product');
 var ModProductsGridComponent = (function () {
     function ModProductsGridComponent(service_product) {
-        this.list_product_display = service_product.getListProduct();
+        var _this = this;
+        this.service_product = service_product;
+        this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
+            = list.sort(function (item1, item2) { return item2.updated - item1.updated; }).slice(0, 6); });
     }
     ModProductsGridComponent.prototype.ngOnInit = function () { };
     ModProductsGridComponent = __decorate([

@@ -1,80 +1,20 @@
-<div id="list-products" class="new-product">
-	<div class="new-product-top">
-		<ul class="product-top-list">
-			<li><a routerLink="/home">Home</a>&nbsp;<span>&gt;</span></li>
-			<li><span class="act">Best Sales</span>&nbsp;</li>
-		</ul>
-		<p class="back"><a routerLink="/home">Back to Previous</a></p>
-		<div class="clearfix"></div>
-	</div>
-	<div class="mens-toolbar">
-		<div class="sort">
-			<div class="sort-by">
-				<label>Sort By</label>
-				<select>
-                    <option value="">Position</option>
-                    <option value="">Name</option>
-                    <option value="">Price</option>
-                </select>
-				<a href=""><img src="images/arrow2.gif" alt="" class="v-middle"></a>
+<div class="row">
+	<div class="col-md-4 col-sm-6" *ngFor="let item of list_product_display, let i = index">
+		<div class="single-shop-product">
+			<div class="product-upper">
+				<img src="{{item.product_img}}" class="img-responsive" alt="" />
 			</div>
-		</div>
-		<ul class="women_pagenation">
-			<li>Page:</li>
-			<li class="active"><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-		</ul>
-		<div class="clearfix"></div>
-	</div>
-
-	<div class="single-product-area">
-		<div class="row">
-			<div class="col-md-4 col-sm-6" *ngFor="let item of list_product_display, let i = index">
-				<div class="single-shop-product">
-					<div class="product-upper">
-						<img src="{{item.product_img}}" class="img-responsive" alt="" />
-					</div>
-					<div class="info-product">
-						<a routerLink="/single">
-							<p class="title">{{item.product_name}}</p>
-						</a>
-						<ins>{{item.price | currency:'USD':true}}</ins>
-						<br/>
-						<p class="brief">{{item.brief}}</p>
-					</div>
-					<div class="product-option-shop">
-						<a class="add-to-cart-button" href="#">Add to cart</a>
-					</div>
-				</div>
+			<div class="info-product">
+				<a routerLink="/single">
+					<p class="title">{{item.product_name}}</p>
+				</a>
+				<ins>{{item.price | currency:'USD':true}}</ins>
+				<br/>
+				<p class="brief">{{item.brief}}</p>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div class="product-pagination text-center">
-					<nav>
-						<ul class="pagination">
-							<li>
-								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
-							</li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+			<div class="product-option-shop">
+				<a class="add-to-cart-button" href="#">Add to cart</a>
 			</div>
 		</div>
 	</div>
-	<script src="js/classie.js" type="text/javascript"></script>
 </div>
-<div class="clearfix"></div>

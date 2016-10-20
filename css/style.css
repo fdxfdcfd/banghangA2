@@ -3091,6 +3091,7 @@ p.right {
 }
 
 p.brief {
+	height: 60px;
 	max-width: 300px;
     min-height: 25px;
     margin: 15px auto;

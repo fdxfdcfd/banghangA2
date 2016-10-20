@@ -40,6 +40,7 @@ import { ModSaleProductsComponent } from './modules/mod_sale_products.component/
 import { ModNewsLetterComponent } from './modules/mod_news_letter.component/mod_news_letter.component';
 import { ModSidebarComponent } from './modules/mod_sidebar.component/mod_sidebar.component';
 import { ModListProductsComponent } from './modules/mod_list_products.component/mod_list_products.component';
+import { ModPagingComponent } from './modules/mod_paging.component/mod_paging.component';
 import { ModLoginComponent } from './modules/mod_login.component/mod_login.component';
 import { ModCartComponent } from './modules/mod_cart.component/mod_cart.component';
 import { ModContactComponent } from './modules/mod_contact.component/mod_contact.component';
@@ -84,7 +85,7 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
-                AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent],
+                AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent],
   providers: [ ProductService ],
   bootstrap:    [ AppComponent ]
 })
