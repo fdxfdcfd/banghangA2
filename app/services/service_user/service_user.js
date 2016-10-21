@@ -9,20 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var ModAdminUserFormComponent = (function () {
-    function ModAdminUserFormComponent() {
+var mock_user_1 = require('../../model/user/mock_user');
+var UserService = (function () {
+    function UserService() {
     }
-    ModAdminUserFormComponent.prototype.ngOnInit = function () {
+    UserService.prototype.getListUser = function () {
+        return mock_user_1.list_user;
     };
-    ModAdminUserFormComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'mod_admin_user_form',
-            templateUrl: 'mod_admin_user_form.component.html'
-        }), 
+    UserService.prototype.getListUserPromise = function () {
+        return Promise.resolve(mock_user_1.list_user);
+    };
+    UserService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], ModAdminUserFormComponent);
-    return ModAdminUserFormComponent;
+    ], UserService);
+    return UserService;
 }());
-exports.ModAdminUserFormComponent = ModAdminUserFormComponent;
-//# sourceMappingURL=mod_admin_user_form.component.js.map
+exports.UserService = UserService;
+//# sourceMappingURL=service_user.js.map

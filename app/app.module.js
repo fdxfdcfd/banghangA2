@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
 var service_product_1 = require('./services/service_product');
+var service_user_1 = require('./services/service_user/service_user');
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
 var account_component_1 = require('./pages/account.component/account.component');
@@ -95,7 +96,7 @@ var AppModule = (function () {
                 admin_manager_menu_component_1.AdminManagerMenuComponent, mod_admin_table_manager_menu_component_1.ModAdminTableManagerMenuComponent, single_component_1.SingleComponent, mod_detail_product_component_1.ModDetailProductComponent,
                 mod_reviews_tabs_component_1.ModReviewsTabsComponent, mod_related_products_component_1.ModRelatedProductsComponent, contact_component_1.ContactComponent, checkout_component_1.CheckOutComponent, register_component_1.RegisterComponent,
                 admin_product_form_component_1.AdminProductFormComponent, mod_admin_product_form_component_1.ModAdminProductFormComponent, admin_user_form_component_1.AdminUserFormComponent, mod_admin_user_form_component_1.ModAdminUserFormComponent, mod_paging_component_1.ModPagingComponent],
-            providers: [service_product_1.ProductService],
+            providers: [service_product_1.ProductService, service_user_1.UserService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

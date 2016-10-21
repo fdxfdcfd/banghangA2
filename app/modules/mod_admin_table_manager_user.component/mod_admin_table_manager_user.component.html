@@ -19,56 +19,21 @@
                 <table class="table table-hover">
                     <tbody>
                         <tr>
+                            <th>ID</th>
                             <th>Tài khoản</th>
-                            <th>Tên Nhân viên</th>
-                            <th>Ngày đăng ký</th>
-                            <th>Trạng thái</th>
+                            <th>Tên</th>
+                            <th>Status</th>
+                            <th>Email</th>
                             <th>Thao tác</th>
                         </tr>
-                        <tr>
-                            <td>183</td>
-                            <td>John Doe</td>
-                            <td>11-7-2014</td>
-                            <td><span class="label label-success">Kích hoạt</span></td>
-                            <td>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa  fa-remove"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>219</td>
-                            <td>Alexander Pierce</td>
-                            <td>11-7-2014</td>
-                            <td><span class="label label-warning">Đang chờ xử lý</span></td>
-                            <td>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa  fa-remove"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>657</td>
-                            <td>Bob Doe</td>
-                            <td>11-7-2014</td>
-                            <td><span class="label label-primary">Giới hạn</span></td>
-                            <td>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa fa-edit"></i></button>
-                                    <button type="button" class="btn btn-info"><i class="fa  fa-remove"></i></button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>175</td>
-                            <td>Mike Doe</td>
-                            <td>11-7-2014</td>
-                            <td><span class="label label-danger">Vô hiệu hóa</span></td>
+                        <tr *ngFor="let user of list_user">
+                            <td>{{user.user_id}}</td>
+                            <td>{{user.username}}</td>
+                            <td>{{user.firstname}} {{user.lastname}}</td>
+                            <td *ngIf="user.status==1"><span class="label label-success">Kích hoạt</span></td>
+                            <td *ngIf="user.status==0"><span class="label label-warning">Đang xử lý</span></td>
+                            <td *ngIf="user.status==-1"><span class="label label-danger">Vô hiệu</span></td>
+                            <td>{{user.email}}</td>
                             <td>
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-info"><i class="fa fa-eye"></i></button>

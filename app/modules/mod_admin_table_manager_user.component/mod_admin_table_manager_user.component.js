@@ -9,8 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var service_user_1 = require('../../services/service_user/service_user');
 var ModAdminTableManagerUserComponent = (function () {
-    function ModAdminTableManagerUserComponent() {
+    function ModAdminTableManagerUserComponent(service_user) {
+        var _this = this;
+        this.service_user = service_user;
+        //Sắp xếp giá tăng dần
+        this.service_user.getListUserPromise().then(function (list) { return _this.list_user = list.sort(function (item1, item2) { return item1.user_id - item2.user_id; }); });
     }
     ModAdminTableManagerUserComponent.prototype.ngOnInit = function () { };
     ModAdminTableManagerUserComponent = __decorate([
@@ -19,7 +24,7 @@ var ModAdminTableManagerUserComponent = (function () {
             selector: 'mod_admin_table_manager_user',
             templateUrl: 'mod_admin_table_manager_user.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_user_1.UserService])
     ], ModAdminTableManagerUserComponent);
     return ModAdminTableManagerUserComponent;
 }());

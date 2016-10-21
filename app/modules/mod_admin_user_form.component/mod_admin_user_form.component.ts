@@ -8,5 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ModAdminUserFormComponent implements OnInit {
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() {
+    }
 }

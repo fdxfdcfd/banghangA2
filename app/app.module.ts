@@ -4,6 +4,7 @@ import { routing, appRoutingProviders }  from './app.routing';
 import { AppComponent }   from './app.component';
 
 import { ProductService } from './services/service_product';
+import { UserService } from './services/service_user/service_user';
 
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
@@ -86,7 +87,7 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
                 AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent],
-  providers: [ ProductService ],
+  providers: [ ProductService,UserService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
