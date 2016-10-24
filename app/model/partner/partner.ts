@@ -1,11 +1,18 @@
 export class Partner{
-    partner_id:string;
-    partner_name:string;
-    partner_img:string;
-    brief:string;
+    id:string;
+    name:string;
+    img:string;
     detail:string;
     created:number;
     updated:number;
-    constructor(){
+    status: number;
+    constructor(id, name, img, detail, created, updated, status){
+        this.id = id;
+        this.name = name;
+        this.img = img;
+        this.detail = detail;
+        this.created = created;
+        this.updated = updated;
+        this.status = status;
     }
 }

@@ -9,14 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var service_product_1 = require('../../services/service_product');
+var service_product_1 = require('../../services/service_product/service_product');
 var ModRelatedProductsComponent = (function () {
     function ModRelatedProductsComponent(service_product) {
         var _this = this;
         this.service_product = service_product;
         //cate_id = cate_id của sản phẩm tại trang single
         this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
-            = list.filter(function (item) { return item.cate_id == '2'; }).slice(0, 3); });
+            = list.filter(function (item) { return item.product_cate_id == '2'; }).slice(0, 3); });
     }
     ModRelatedProductsComponent.prototype.ngOnInit = function () { };
     ModRelatedProductsComponent = __decorate([

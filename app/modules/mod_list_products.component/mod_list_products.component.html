@@ -2,11 +2,11 @@
 	<div class="col-md-4 col-sm-6" *ngFor="let item of list_product_display, let i = index">
 		<div class="single-shop-product">
 			<div class="product-upper">
-				<img src="{{item.product_img}}" class="img-responsive" alt="" />
+				<img src="{{item.img}}" class="img-responsive" alt="" />
 			</div>
 			<div class="info-product">
 				<a routerLink="/single">
-					<p class="title">{{item.product_name}}</p>
+					<p class="title">{{item.name}}</p>
 				</a>
 				<ins>{{item.price | currency:'USD':true}}</ins>
 				<br/>

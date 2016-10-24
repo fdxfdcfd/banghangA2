@@ -9,16 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var mock_user_1 = require('../../model/user/mock_user');
+//import { list_user } from '../../model/user/mock_user';
 var UserService = (function () {
     function UserService() {
     }
-    UserService.prototype.getListUser = function () {
-        return mock_user_1.list_user;
-    };
-    UserService.prototype.getListUserPromise = function () {
-        return Promise.resolve(mock_user_1.list_user);
-    };
     UserService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

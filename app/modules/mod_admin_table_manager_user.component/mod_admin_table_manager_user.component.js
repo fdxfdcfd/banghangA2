@@ -12,10 +12,9 @@ var core_1 = require('@angular/core');
 var service_user_1 = require('../../services/service_user/service_user');
 var ModAdminTableManagerUserComponent = (function () {
     function ModAdminTableManagerUserComponent(service_user) {
-        var _this = this;
         this.service_user = service_user;
         //Sắp xếp giá tăng dần
-        this.service_user.getListUserPromise().then(function (list) { return _this.list_user = list.sort(function (item1, item2) { return item1.user_id - item2.user_id; }); });
+        // this.service_user.getListUserPromise().then(list => this.list_user = list.sort((item1, item2) => item1.user_id - item2.user_id));
     }
     ModAdminTableManagerUserComponent.prototype.ngOnInit = function () { };
     ModAdminTableManagerUserComponent = __decorate([

@@ -9,8 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var service_product_1 = require('../../services/service_product/service_product');
 var ModAdminTableManagerProductComponent = (function () {
-    function ModAdminTableManagerProductComponent() {
+    function ModAdminTableManagerProductComponent(service_product) {
+        var _this = this;
+        this.service_product = service_product;
+        this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
+            = list; });
     }
     ModAdminTableManagerProductComponent.prototype.ngOnInit = function () { };
     ModAdminTableManagerProductComponent = __decorate([
@@ -19,7 +24,7 @@ var ModAdminTableManagerProductComponent = (function () {
             selector: 'mod_admin_table_manager_product',
             templateUrl: 'mod_admin_table_manager_product.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_product_1.ProductService])
     ], ModAdminTableManagerProductComponent);
     return ModAdminTableManagerProductComponent;
 }());

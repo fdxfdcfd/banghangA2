@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'mod_reviews_tabs',
-    templateUrl: 'mod_reviews_tabs.component.html'
+    selector: 'mod_comment',
+    templateUrl: 'mod_comment.component.html'
 })
 export class ModReviewsTabsComponent implements OnInit {
     constructor() { }

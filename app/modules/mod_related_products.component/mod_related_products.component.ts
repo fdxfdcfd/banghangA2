@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../model/product/product';
 import { list_product } from '../../model/product/mock_product';
-import { ProductService } from '../../services/service_product';
+import { ProductService } from '../../services/service_product/service_product';
 
 @Component({
     moduleId: module.id,
@@ -13,7 +13,7 @@ export class ModRelatedProductsComponent implements OnInit {
     constructor(private service_product: ProductService) {
         //cate_id = cate_id của sản phẩm tại trang single
         this.service_product.getListProductPromise().then(list => this.list_product_display 
-        = list.filter(item => item.cate_id == '2').slice(0,3));
+        = list.filter(item => item.product_cate_id == '2').slice(0,3));
     }
     ngOnInit() { }
 }

@@ -1,23 +1,30 @@
 export class User{
-    user_id: number;
-    firstname: string;
-    lastname:string;
-    email:string;
+    id: string;
     username:string;
-    password_salt: string;
     password: string;
-    user_category_id: number;
-    user_img:string;
-    status: number;
-    team_id:number;
+    password_salt: string;
+    email:string;
+    first_name: string;
+    last_name:string;
+    img:string;
     level: number;
-    lead_id:number;
-    last_login_ip:string;
     last_login:number;
-    user_updated_id: number;
-    user_created_id: number;
     created: number;
     updated: number;
-    constructor(){
+    status: number;
+    constructor(id, first_name, last_name, username, password, password_salt, email, img, level, last_login, created, updated, status){
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.username = username;
+        this.password = password;
+        this.password_salt = password_salt;
+        this.img = img;
+        this.email = email;
+        this.level = level;
+        this.last_login = last_login;
+        this.created = created;
+        this.updated = updated;
+        this.status = status;
     }
 }

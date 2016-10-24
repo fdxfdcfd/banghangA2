@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders }  from './app.routing';
 import { AppComponent }   from './app.component';
 
-import { ProductService } from './services/service_product';
+import { ProductService } from './services/service_product/service_product';
 import { UserService } from './services/service_user/service_user';
 
 import { HomeComponent } from './pages/home.component/home.component';
@@ -48,7 +48,7 @@ import { ModContactComponent } from './modules/mod_contact.component/mod_contact
 import { ModRegisterComponent } from './modules/mod_register.component/mod_register.component';
 import { ModDetailProductComponent } from './modules/mod_detail_product.component/mod_detail_product.component';
 import { ModRelatedProductsComponent } from './modules/mod_related_products.component/mod_related_products.component';
-import { ModReviewsTabsComponent } from './modules/mod_reviews_tabs.component/mod_reviews_tabs.component';
+import { ModReviewsTabsComponent } from './modules/mod_comment.component/mod_comment.component';
 import { ModAdminLeftSidebarComponent } from './modules/mod_admin_left_sidebar.component/mod_admin_left_sidebar.component';
 import { ModAdminContentHeaderComponent } from './modules/mod_admin_content_header.component/mod_admin_content_header.component';
 import { ModAdminGeneralInfoComponent } from './modules/mod_admin_general_info.component/mod_admin_general_info.component';
@@ -87,7 +87,7 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
                 AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent],
-  providers: [ ProductService,UserService ],
+  providers: [ ProductService, UserService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

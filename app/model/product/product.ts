@@ -1,27 +1,37 @@
 export class Product{
-    product_id: string;
-    product_name:string;
+    id: string;
+    name:string;
     price: number;
-    product_img:string;
+    price_sale: number;
+    img:string;
     brief: string;
     detail: string;
-    cate_id: string;
-    user_id_updated: number;
-    user_id_created: number;
+    product_cate_id: string;
+    partner_id: string;
+    product_new: number;
     inventory: number;
+    views: number;
     created: number;
     updated: number;
-    constructor(id, name, price, img, brief, detail, user_id_updated, user_id_created, inventory, created, updated){
-        this.product_id = id;
-        this.product_name = name;
+    state: string;
+    status: number;
+    constructor(id, name, price, price_sale, img, brief, detail, inventory, state, views,
+     partner_id, product_cate_id, product_new, created, updated, status) {
+        this.id = id;
+        this.name = name;
         this.price = price;
-        this.product_img = img;
+        this.price_sale = price_sale;
+        this.img = img;
         this.brief = brief;
         this.detail = detail;
-        this.user_id_updated = user_id_updated;
-        this.user_id_created = user_id_created;
+        this.product_cate_id = product_cate_id;
+        this.partner_id = partner_id;
+        this.product_new = product_new;
+        this.views = views;
+        this.state = state;
         this.inventory = inventory;
         this.created = created;
         this.updated = updated;
+        this.status = status;
     }
 }

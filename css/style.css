@@ -1976,7 +1976,7 @@ ul.qty li p {
     padding: 0 10px;
     cursor: pointer;
 }
-.nav-tabs > li > a {
+.comment > p {
     margin-right: 0px;
     line-height: 1.42857143;
     border-radius: 0;
@@ -1992,7 +1992,7 @@ ul.qty li p {
     cursor: pointer;
 	    font-family: 'PlayfairDisplay-Regular';
 }
-ul.nav.nav-tabs {
+.comment {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
     padding-bottom: 18px;

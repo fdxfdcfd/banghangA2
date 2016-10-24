@@ -1,17 +1,22 @@
 "use strict";
 var Product = (function () {
-    function Product(id, name, price, img, brief, detail, user_id_updated, user_id_created, inventory, created, updated) {
-        this.product_id = id;
-        this.product_name = name;
+    function Product(id, name, price, price_sale, img, brief, detail, inventory, state, views, partner_id, product_cate_id, product_new, created, updated, status) {
+        this.id = id;
+        this.name = name;
         this.price = price;
-        this.product_img = img;
+        this.price_sale = price_sale;
+        this.img = img;
         this.brief = brief;
         this.detail = detail;
-        this.user_id_updated = user_id_updated;
-        this.user_id_created = user_id_created;
+        this.product_cate_id = product_cate_id;
+        this.partner_id = partner_id;
+        this.product_new = product_new;
+        this.views = views;
+        this.state = state;
         this.inventory = inventory;
         this.created = created;
         this.updated = updated;
+        this.status = status;
     }
     return Product;
 }());

@@ -16,12 +16,12 @@ var ModReviewsTabsComponent = (function () {
     ModReviewsTabsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'mod_reviews_tabs',
-            templateUrl: 'mod_reviews_tabs.component.html'
+            selector: 'mod_comment',
+            templateUrl: 'mod_comment.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], ModReviewsTabsComponent);
     return ModReviewsTabsComponent;
 }());
 exports.ModReviewsTabsComponent = ModReviewsTabsComponent;
-//# sourceMappingURL=mod_reviews_tabs.component.js.map
+//# sourceMappingURL=mod_comment.component.js.map
