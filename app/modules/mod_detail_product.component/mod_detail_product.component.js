@@ -9,17 +9,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var product_1 = require('../../model/product/product');
+var router_1 = require('@angular/router');
+var common_1 = require('@angular/common');
+var service_product_1 = require('../../services/service_product/service_product');
 var ModDetailProductComponent = (function () {
-    function ModDetailProductComponent() {
+    function ModDetailProductComponent(service_product, route, location) {
+        this.service_product = service_product;
+        this.route = route;
+        this.location = location;
     }
-    ModDetailProductComponent.prototype.ngOnInit = function () { };
+    ModDetailProductComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.forEach(function (params) {
+            var id = +params['id'];
+            _this.service_product.getProduct(id)
+                .then(function (product) { return _this.product = product; });
+        });
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', product_1.Product)
+    ], ModDetailProductComponent.prototype, "product", void 0);
     ModDetailProductComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'mod_detail_product',
             templateUrl: 'mod_detail_product.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_product_1.ProductService, router_1.ActivatedRoute, common_1.Location])
     ], ModDetailProductComponent);
     return ModDetailProductComponent;
 }());

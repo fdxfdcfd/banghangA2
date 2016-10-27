@@ -10,21 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var service_product_1 = require('../../services/service_product/service_product');
+var router_1 = require('@angular/router');
 var ModSaleProductsComponent = (function () {
-    function ModSaleProductsComponent(service_product) {
+    function ModSaleProductsComponent(service_product, router) {
         var _this = this;
         this.service_product = service_product;
+        this.router = router;
         this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
             = list.sort(function (item1, item2) { return item2.price_sale - item1.price_sale; }).slice(0, 6); });
     }
     ModSaleProductsComponent.prototype.ngOnInit = function () { };
+    ModSaleProductsComponent.prototype.gotoDetail = function (product) {
+        var link = ['/single', product.id];
+        this.router.navigate(link);
+    };
     ModSaleProductsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'mod_sale_products',
             templateUrl: 'mod_sale_products.component.html'
         }), 
-        __metadata('design:paramtypes', [service_product_1.ProductService])
+        __metadata('design:paramtypes', [service_product_1.ProductService, router_1.Router])
     ], ModSaleProductsComponent);
     return ModSaleProductsComponent;
 }());

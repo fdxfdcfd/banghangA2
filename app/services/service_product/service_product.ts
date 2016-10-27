@@ -14,4 +14,9 @@ export class ProductService {
     getListProductPromise():Promise<Product[]> {
         return Promise.resolve(list_product);
     }
+
+    getProduct(id: number): Promise<Product> {
+        return this.getListProductPromise()
+            .then(products => products.find(product => product.id == id));
+    }
 }

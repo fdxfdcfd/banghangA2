@@ -44,7 +44,7 @@ var appRoutes = [
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'products', component: products_component_1.ProductsComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
-    { path: 'single', component: single_component_1.SingleComponent },
+    { path: 'single/:id', component: single_component_1.SingleComponent },
     { path: 'account', component: account_component_1.AccountComponent },
     { path: 'checkout', component: checkout_component_1.CheckOutComponent },
     { path: 'register', component: register_component_1.RegisterComponent },

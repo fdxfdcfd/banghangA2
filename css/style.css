@@ -2051,8 +2051,9 @@ p.tab-text {
     float: left;
     font-size: 19px;
     color: #000;
-    font-weight: 500;
-	    padding: 0;
+    font-weight: bold;
+    padding: 0;
+    text-transform: capitalize;
 }
 .dress-name p {
     margin-top: 16px;
@@ -2062,10 +2063,10 @@ p.tab-text {
 }
 .dress-name span {
 	float: right;
-    color: #000000;
-    font-size: 20px;
+    color: #999;
+    font-size: 15px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: bold;
 }
 p.left {
     float: left;

@@ -50,7 +50,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'single', component: SingleComponent },
+  { path: 'single/:id', component: SingleComponent },
   { path: 'account', component: AccountComponent },
   { path: 'checkout', component: CheckOutComponent },
   { path: 'register', component: RegisterComponent },

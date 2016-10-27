@@ -8,7 +8,7 @@
             <mod_sidebar></mod_sidebar>
         </div>
         <div class="new-product">
-            <mod_detail_product></mod_detail_product>
+            <mod_detail_product [product]="selectedProduct"></mod_detail_product>
             <mod_comment></mod_comment>
         </div>
         <div class="clearfix"></div>
@@ -20,24 +20,3 @@
 <mod_news_letter></mod_news_letter>
 
 <wid_footer></wid_footer>
-
-<script src="js/responsive-tabs.js"></script>
-<script type="text/javascript">
-    $( '#myTab a' ).click( function ( e ) {
-    e.preventDefault();
-    $( this ).tab( 'show' );
-    } );
-
-    $( '#moreTabs a' ).click( function ( e ) {
-    e.preventDefault();
-    $( this ).tab( 'show' );
-    } );
-
-    ( function( $ ) {
-        // Test for making sure event are maintained
-        $( '.js-alert-test' ).click( function () {
-        alert( 'Button Clicked: Event was maintained' );
-        } );
-        fakewaffle.responsiveTabs( [ 'xs', 'sm' ] );
-    } )( jQuery );
-</script>
