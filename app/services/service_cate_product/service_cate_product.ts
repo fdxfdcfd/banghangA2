@@ -11,7 +11,12 @@ export class CateProductService {
         return list_cate_product;
     }
 
-    getListCateProductPromise():Promise<CateProduct[]> {
+    getListCateProductPromise(): Promise<CateProduct[]> {
         return Promise.resolve(list_cate_product);
+    }
+
+    getCateProduct(id: number): Promise<CateProduct> {
+        return this.getListCateProductPromise()
+            .then(list_cate_product => list_cate_product.find(cate_product => cate_product.id == id));
     }
 }

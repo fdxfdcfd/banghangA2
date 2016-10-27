@@ -19,6 +19,10 @@ var CateProductService = (function () {
     CateProductService.prototype.getListCateProductPromise = function () {
         return Promise.resolve(mock_cate_product_1.list_cate_product);
     };
+    CateProductService.prototype.getCateProduct = function (id) {
+        return this.getListCateProductPromise()
+            .then(function (list_cate_product) { return list_cate_product.find(function (cate_product) { return cate_product.id == id; }); });
+    };
     CateProductService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])

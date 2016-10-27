@@ -2,9 +2,9 @@
 exports.list_cate_product = [
     {
         id: 1,
-        name: 'T-Shirt Women',
+        name: 'Shirt Women',
         sex: 1,
-        detail: 'T-Shirt Women',
+        detail: 'Shirt Women',
         created: 1472925059004,
         updated: 1472925059004,
         status: 1,

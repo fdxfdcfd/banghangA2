@@ -1,6 +1,5 @@
 "use strict";
 var router_1 = require('@angular/router');
-//pages
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
 var account_component_1 = require('./pages/account.component/account.component');
@@ -43,6 +42,7 @@ var appRoutes = [
         ] },
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'products', component: products_component_1.ProductsComponent },
+    { path: 'products/:id', component: products_component_1.ProductsComponent },
     { path: 'contact', component: contact_component_1.ContactComponent },
     { path: 'single/:id', component: single_component_1.SingleComponent },
     { path: 'account', component: account_component_1.AccountComponent },

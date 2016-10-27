@@ -1,7 +1,6 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//pages
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
 import { AccountComponent } from './pages/account.component/account.component';
@@ -49,6 +48,7 @@ const appRoutes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'products/:id', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'single/:id', component: SingleComponent },
   { path: 'account', component: AccountComponent },

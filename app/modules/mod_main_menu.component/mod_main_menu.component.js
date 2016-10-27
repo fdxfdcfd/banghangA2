@@ -10,21 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var service_cate_product_1 = require('../../services/service_cate_product/service_cate_product');
+var router_1 = require('@angular/router');
 var ModMainMenuComponent = (function () {
-    function ModMainMenuComponent(service_cate_product) {
+    function ModMainMenuComponent(service_cate_product, router) {
         var _this = this;
         this.service_cate_product = service_cate_product;
+        this.router = router;
         this.service_cate_product.getListCateProductPromise().then(function (list) { return _this.list_cate_product_display
             = list.filter(function (item) { return item.status == 1; }); });
     }
     ModMainMenuComponent.prototype.ngOnInit = function () { };
+    ModMainMenuComponent.prototype.gotoListProducts = function (cate_product) {
+        var link = ['/products', cate_product.id];
+        this.router.navigate(link);
+    };
     ModMainMenuComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'mod_main_menu',
             templateUrl: 'mod_main_menu.component.html'
         }), 
-        __metadata('design:paramtypes', [service_cate_product_1.CateProductService])
+        __metadata('design:paramtypes', [service_cate_product_1.CateProductService, router_1.Router])
     ], ModMainMenuComponent);
     return ModMainMenuComponent;
 }());

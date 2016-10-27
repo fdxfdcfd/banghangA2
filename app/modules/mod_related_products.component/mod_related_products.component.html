@@ -3,7 +3,8 @@
         <header>
             <h3 class="like text-center">Related Products</h3>
         </header>
-        <div class="col-md-4 product simpleCart_shelfItem text-center" *ngFor="let item of list_product_display, let i = index">
+        <div class="col-md-4 product simpleCart_shelfItem text-center" (click)="gotoDetail(item)"
+        *ngFor="let item of list_product_display, let i = index">
             <a routerLink="/single"><img src="{{item.img}}" alt="" /></a>
             <div class="mask">
                 <a routerLink="/single">Quick View</a>
