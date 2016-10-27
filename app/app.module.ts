@@ -27,6 +27,7 @@ import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_cat
 import { AdminManagerMenuComponent } from './pages/admin_manager_menu.component/admin_manager_menu.component';
 import { AdminProductFormComponent } from './pages/admin_product_form.component/admin_product_form.component';
 import { AdminUserFormComponent } from './pages/admin_user_form.component/admin_user_form.component';
+import { AdminComponent } from './pages/admin.component/admin.component';
 
 import {  WidHeaderComponent  } from './widgets/wid_header.component/wid_header.component';
 import {  WidFooterComponent  } from './widgets/wid_footer.component/wid_footer.component';
@@ -86,7 +87,9 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 ModAdminTableManagerCategoryUserComponent, AdminManagerCategoryCustomerComponent, ModAdminTableManagerCategoryCustomerComponent,
                 AdminManagerMenuComponent, ModAdminTableManagerMenuComponent, SingleComponent, ModDetailProductComponent,
                 ModReviewsTabsComponent, ModRelatedProductsComponent, ContactComponent, CheckOutComponent, RegisterComponent,
-                AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent],
+                AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent,
+                AdminComponent
+                ],
   providers: [ ProductService, UserService ],
   bootstrap:    [ AppComponent ]
 })

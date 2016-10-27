@@ -24,23 +24,29 @@ import { AdminManagerCategoryCustomerComponent } from './pages/admin_manager_cat
 import { AdminManagerMenuComponent } from './pages/admin_manager_menu.component/admin_manager_menu.component';
 import { AdminProductFormComponent } from './pages/admin_product_form.component/admin_product_form.component';
 import { AdminUserFormComponent } from './pages/admin_user_form.component/admin_user_form.component';
+import { AdminComponent } from './pages/admin.component/admin.component';
 
 const appRoutes: Routes = [
-  { path: 'admin/quan-ly-san-pham', component: AdminManagerProductComponent },
-  { path: 'admin/quan-ly-khach-hang', component: AdminManagerCustomerComponent },
-  { path: 'admin/quan-ly-nhan-vien', component: AdminManagerUserComponent },
-  { path: 'admin/quan-ly-khuyen-mai', component: AdminManagerPromotionComponent },
-  { path: 'admin/quan-ly-doi-tac', component: AdminManagerPartnerComponent },
-  { path: 'admin/quan-ly-hoa-don', component: AdminManagerBillComponent },
-  { path: 'admin/quan-ly-tin-tuc', component: AdminManagerNewsComponent },
-  { path: 'admin/quan-ly-loai-san-pham', component: AdminManagerCategoryProductComponent },
-  { path: 'admin/quan-ly-loai-nhan-vien', component: AdminManagerCategoryUserComponent },
-  { path: 'admin/quan-ly-loai-khach-hang', component: AdminManagerCategoryCustomerComponent },
-  { path: 'admin/quan-ly-menu', component: AdminManagerMenuComponent },
-  { path: 'admin/them-san-pham', component: AdminProductFormComponent },
-  { path: 'admin/them-nhan-vien', component: AdminUserFormComponent },
+  { path: 'admin', component: AdminComponent,
+  children:[
+            { path: '', component: AdminHomeComponent },
+            { path: 'quan-ly-san-pham', component: AdminManagerProductComponent },
+            { path: 'quan-ly-khach-hang', component: AdminManagerCustomerComponent },
+            { path: 'quan-ly-nhan-vien', component: AdminManagerUserComponent },
+            { path: 'quan-ly-khuyen-mai', component: AdminManagerPromotionComponent },
+            { path: 'quan-ly-doi-tac', component: AdminManagerPartnerComponent },
+            { path: 'quan-ly-hoa-don', component: AdminManagerBillComponent },
+            { path: 'quan-ly-tin-tuc', component: AdminManagerNewsComponent },
+            { path: 'quan-ly-loai-san-pham', component: AdminManagerCategoryProductComponent },
+            { path: 'quan-ly-loai-nhan-vien', component: AdminManagerCategoryUserComponent },
+            { path: 'quan-ly-loai-khach-hang', component: AdminManagerCategoryCustomerComponent },
+            { path: 'quan-ly-menu', component: AdminManagerMenuComponent },
+            { path: 'them-san-pham', component: AdminProductFormComponent },
+            { path: 'them-nhan-vien', component: AdminUserFormComponent },
+  ] },
+ 
   
-  { path: 'admin', component: AdminHomeComponent },
+
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
