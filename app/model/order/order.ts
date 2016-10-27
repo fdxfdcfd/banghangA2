@@ -1,6 +1,6 @@
 export class Order{
     id:string;
-    user_id: string;
+    user_id: number;
     created:number;
     updated:number;
     status: number;

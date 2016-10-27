@@ -13,7 +13,7 @@ export class ModRelatedProductsComponent implements OnInit {
     constructor(private service_product: ProductService) {
         //cate_id = cate_id của sản phẩm tại trang single
         this.service_product.getListProductPromise().then(list => this.list_product_display 
-        = list.filter(item => item.product_cate_id == '2').slice(0,3));
+        = list.filter(item => item.product_cate_id == 1).slice(0,3));
     }
     ngOnInit() { }
 }

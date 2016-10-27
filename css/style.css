@@ -584,6 +584,10 @@ a.product_name {
 	text-decoration: none;
 	color: #999;
 }
+
+.item-price {
+	color: #900;
+}
 .product p i {
 	background: url(../images/cart.png) no-repeat;
 	width: 20px;
@@ -1361,8 +1365,8 @@ h3.new-models {
 }
 p.title {
 	color: #000;
-	font-size: 0.95em;
-	font-weight: 700;
+	font-size: 15px;
+	font-weight: bold;
 	margin:0;
 	text-transform: capitalize;
 }
@@ -3075,19 +3079,20 @@ p.right {
 }
 
 .info-product {
+	text-align: center;
 	margin: 15px 0px;
 }
 
 .info-product a {
-	float: left;
 	font-size: 15px;
 	font-weight: bold;
 }
 
-.info-product ins {
-	float: right;
+.product-price {
+	margin: 15px 0px;
 	font-size: 15px;
 	font-weight: bold;
+	color: #999;
 }
 
 p.brief {

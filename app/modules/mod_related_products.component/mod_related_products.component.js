@@ -16,7 +16,7 @@ var ModRelatedProductsComponent = (function () {
         this.service_product = service_product;
         //cate_id = cate_id của sản phẩm tại trang single
         this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
-            = list.filter(function (item) { return item.product_cate_id == '2'; }).slice(0, 3); });
+            = list.filter(function (item) { return item.product_cate_id == 1; }).slice(0, 3); });
     }
     ModRelatedProductsComponent.prototype.ngOnInit = function () { };
     ModRelatedProductsComponent = __decorate([

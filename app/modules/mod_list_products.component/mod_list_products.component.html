@@ -8,8 +8,18 @@
 				<a routerLink="/single">
 					<p class="title">{{item.name}}</p>
 				</a>
-				<ins>{{item.price | currency:'USD':true}}</ins>
-				<br/>
+				<p class="product-price" *ngIf="item.price_sale != 0">
+					<span class="pull-left">
+						<del>{{item.price | currency:'USD':true}}</del>
+					</span>
+					<span class="item-price pull-right">
+						{{item.price_sale | currency:'USD':true}}
+					</span>
+					<br/>
+				</p>
+				<p class="product-price" *ngIf="item.price_sale == 0">
+					<span class="item-price">{{item.price | currency:'USD':true}}</span>
+				</p>
 				<p class="brief">{{item.brief}}</p>
 			</div>
 			<div class="product-option-shop">

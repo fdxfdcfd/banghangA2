@@ -2,8 +2,8 @@ export class Comment{
     id:string;
     content: string;
     email: string;
-    user_id: string;
-    product_id: string;
+    user_id: number;
+    product_id: number;
     created:number;
     updated:number;
     status: number;

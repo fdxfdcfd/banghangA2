@@ -10,8 +10,8 @@ import { UserService } from '../../services/service_user/service_user';
 export class ModAdminTableManagerUserComponent implements OnInit {
     list_user: User[];
     constructor(private service_user: UserService) {
-        //Sắp xếp giá tăng dần
-        // this.service_user.getListUserPromise().then(list => this.list_user = list.sort((item1, item2) => item1.user_id - item2.user_id));
+        //Sắp xếp id tăng dần
+        this.service_user.getListUserPromise().then(list => this.list_user = list.sort((item1, item2) => item1.id - item2.id));
      }
 
     ngOnInit() { }

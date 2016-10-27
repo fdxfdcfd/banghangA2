@@ -1,5 +1,5 @@
 export class Customer{
-    id: string;
+    id: number;
     username:string;
     password: string;
     password_salt: string;

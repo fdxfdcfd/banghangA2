@@ -1,7 +1,7 @@
 export class OrderDetail{
     id:string;
-    order_id: string;
-    product_id: string;
+    order_id: number;
+    product_id: number;
     product_name: string;
     quantity: number;
     price: number;
