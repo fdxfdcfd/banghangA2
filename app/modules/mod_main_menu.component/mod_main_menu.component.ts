@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CateProduct } from '../../model/cate_product/cate_product';
+import { CateProductService } from '../../services/service_cate_product/service_cate_product';
 
 @Component({
     moduleId: module.id,
@@ -6,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: 'mod_main_menu.component.html'
 })
 export class ModMainMenuComponent implements OnInit {
-    constructor() { }
-
+    list_cate_product_display: CateProduct[];
+    constructor(private service_cate_product: CateProductService) {
+        this.service_cate_product.getListCateProductPromise().then(list => this.list_cate_product_display 
+        = list.filter(item => item.status == 1));
+    }
     ngOnInit() { }
 }

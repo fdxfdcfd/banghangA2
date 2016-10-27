@@ -10,23 +10,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var service_product_1 = require('../../services/service_product/service_product');
-var ModProductsGridComponent = (function () {
-    function ModProductsGridComponent(service_product) {
+var ModLatestProductsComponent = (function () {
+    function ModLatestProductsComponent(service_product) {
         var _this = this;
         this.service_product = service_product;
         this.service_product.getListProductPromise().then(function (list) { return _this.list_product_display
             = list.sort(function (item1, item2) { return item2.updated - item1.updated; }).slice(0, 6); });
     }
-    ModProductsGridComponent.prototype.ngOnInit = function () { };
-    ModProductsGridComponent = __decorate([
+    ModLatestProductsComponent.prototype.ngOnInit = function () { };
+    ModLatestProductsComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'mod_products_grid',
-            templateUrl: 'mod_products_grid.component.html'
+            selector: 'mod_latest_products',
+            templateUrl: 'mod_latest_products.component.html'
         }), 
         __metadata('design:paramtypes', [service_product_1.ProductService])
-    ], ModProductsGridComponent);
-    return ModProductsGridComponent;
+    ], ModLatestProductsComponent);
+    return ModLatestProductsComponent;
 }());
-exports.ModProductsGridComponent = ModProductsGridComponent;
-//# sourceMappingURL=mod_products_grid.component.js.map
+exports.ModLatestProductsComponent = ModLatestProductsComponent;
+//# sourceMappingURL=mod_latest_products.component.js.map

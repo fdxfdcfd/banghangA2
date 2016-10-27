@@ -1,5 +1,5 @@
 export class Partner{
-    id:string;
+    id:number;
     name:string;
     img:string;
     detail:string;

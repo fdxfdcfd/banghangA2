@@ -1,5 +1,5 @@
 export class Order{
-    id:string;
+    id: number;
     user_id: number;
     created:number;
     updated:number;

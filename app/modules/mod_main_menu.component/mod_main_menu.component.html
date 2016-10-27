@@ -20,30 +20,17 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a routerLink="/products">New In Clothing</a></li>
-                            <li><a routerLink="/products">New In Bags</a></li>
-                            <li><a routerLink="/products">New In Shoes</a></li>
-                            <li><a routerLink="/products">New In Watches</a></li>
-                            <li><a routerLink="/products">New In Grooming</a></li>
+                            <li *ngFor="let item of list_cate_product_display">
+                                <a *ngIf="item.sex == 0" routerLink="/products">{{item.name}}</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">women <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a routerLink="/products">New In Clothing</a></li>
-                            <li><a routerLink="/products">New In Bags</a></li>
-                            <li><a routerLink="/products">New In Shoes</a></li>
-                            <li><a routerLink="/products">New In Watches</a></li>
-                            <li><a routerLink="/products">New In Beauty</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">kids <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a routerLink="/products">New In Boys Clothing</a></li>
-                            <li><a routerLink="/products">New In Girls Clothing</a></li>
-                            <li><a routerLink="/products">New In Boys Shoes</a></li>
-                            <li><a routerLink="/products">New In Girls Shoes</a></li>
+                            <li *ngFor="let item of list_cate_product_display">
+                                <a *ngIf="item.sex == 1" routerLink="/products">{{item.name}}</a>
+                            </li>
                         </ul>
                     </li>
                     <li><a routerLink="/contact">CONTACT</a></li>

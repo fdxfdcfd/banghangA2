@@ -14,6 +14,12 @@ var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
 var service_product_1 = require('./services/service_product/service_product');
 var service_user_1 = require('./services/service_user/service_user');
+var service_partner_1 = require('./services/service_partner/service_partner');
+var service_order_1 = require('./services/service_order/service_order');
+var service_order_detail_1 = require('./services/service_order_detail/service_order_detail');
+var service_customer_1 = require('./services/service_customer/service_customer');
+var service_comment_1 = require('./services/service_comment/service_comment');
+var service_cate_product_1 = require('./services/service_cate_product/service_cate_product');
 var home_component_1 = require('./pages/home.component/home.component');
 var products_component_1 = require('./pages/products.component/products.component');
 var account_component_1 = require('./pages/account.component/account.component');
@@ -43,7 +49,7 @@ var wid_admin_footer_component_1 = require('./widgets/wid_admin_footer.component
 var mod_main_menu_component_1 = require('./modules/mod_main_menu.component/mod_main_menu.component');
 var mod_banner_component_1 = require('./modules/mod_banner.component/mod_banner.component');
 var mod_online_trip_component_1 = require('./modules/mod_online_trip.component/mod_online_trip.component');
-var mod_products_grid_component_1 = require('./modules/mod_products_grid.component/mod_products_grid.component');
+var mod_latest_products_component_1 = require('./modules/mod_latest_products.component/mod_latest_products.component');
 var mod_sale_products_component_1 = require('./modules/mod_sale_products.component/mod_sale_products.component');
 var mod_news_letter_component_1 = require('./modules/mod_news_letter.component/mod_news_letter.component');
 var mod_sidebar_component_1 = require('./modules/mod_sidebar.component/mod_sidebar.component');
@@ -82,7 +88,7 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 app_routing_1.routing],
             declarations: [app_component_1.AppComponent, wid_header_component_1.WidHeaderComponent, home_component_1.HomeComponent, account_component_1.AccountComponent, products_component_1.ProductsComponent, mod_main_menu_component_1.ModMainMenuComponent,
-                mod_banner_component_1.ModBannerComponent, mod_online_trip_component_1.ModOnlineTripComponent, mod_products_grid_component_1.ModProductsGridComponent,
+                mod_banner_component_1.ModBannerComponent, mod_online_trip_component_1.ModOnlineTripComponent, mod_latest_products_component_1.ModLatestProductsComponent,
                 mod_sale_products_component_1.ModSaleProductsComponent, mod_news_letter_component_1.ModNewsLetterComponent, wid_footer_component_1.WidFooterComponent,
                 mod_sidebar_component_1.ModSidebarComponent, mod_list_products_component_1.ModListProductsComponent, mod_login_component_1.ModLoginComponent, mod_cart_component_1.ModCartComponent, mod_contact_component_1.ModContactComponent,
                 mod_register_component_1.ModRegisterComponent, admin_home_component_1.AdminHomeComponent, mod_admin_left_sidebar_component_1.ModAdminLeftSidebarComponent,
@@ -99,7 +105,8 @@ var AppModule = (function () {
                 admin_product_form_component_1.AdminProductFormComponent, mod_admin_product_form_component_1.ModAdminProductFormComponent, admin_user_form_component_1.AdminUserFormComponent, mod_admin_user_form_component_1.ModAdminUserFormComponent, mod_paging_component_1.ModPagingComponent,
                 admin_component_1.AdminComponent
             ],
-            providers: [service_product_1.ProductService, service_user_1.UserService],
+            providers: [service_product_1.ProductService, service_user_1.UserService, service_partner_1.PartnerService, service_order_1.OrderService, service_order_detail_1.OrderDetailService,
+                service_customer_1.CustomerService, service_comment_1.CommentService, service_cate_product_1.CateProductService],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

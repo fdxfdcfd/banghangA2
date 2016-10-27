@@ -5,6 +5,12 @@ import { AppComponent }   from './app.component';
 
 import { ProductService } from './services/service_product/service_product';
 import { UserService } from './services/service_user/service_user';
+import { PartnerService } from './services/service_partner/service_partner';
+import { OrderService } from './services/service_order/service_order';
+import { OrderDetailService } from './services/service_order_detail/service_order_detail';
+import { CustomerService } from './services/service_customer/service_customer';
+import { CommentService } from './services/service_comment/service_comment';
+import { CateProductService } from './services/service_cate_product/service_cate_product';
 
 import { HomeComponent } from './pages/home.component/home.component';
 import { ProductsComponent } from './pages/products.component/products.component';
@@ -37,7 +43,7 @@ import { WidAdminFooterComponent } from './widgets/wid_admin_footer.component/wi
 import { ModMainMenuComponent } from './modules/mod_main_menu.component/mod_main_menu.component';
 import { ModBannerComponent } from './modules/mod_banner.component/mod_banner.component';
 import { ModOnlineTripComponent } from './modules/mod_online_trip.component/mod_online_trip.component';
-import { ModProductsGridComponent } from './modules/mod_products_grid.component/mod_products_grid.component';
+import { ModLatestProductsComponent } from './modules/mod_latest_products.component/mod_latest_products.component';
 import { ModSaleProductsComponent } from './modules/mod_sale_products.component/mod_sale_products.component';
 import { ModNewsLetterComponent } from './modules/mod_news_letter.component/mod_news_letter.component';
 import { ModSidebarComponent } from './modules/mod_sidebar.component/mod_sidebar.component';
@@ -73,7 +79,7 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
   imports:      [ BrowserModule,
                 routing ],
   declarations: [ AppComponent, WidHeaderComponent, HomeComponent,AccountComponent,ProductsComponent, ModMainMenuComponent,
-                ModBannerComponent, ModOnlineTripComponent, ModProductsGridComponent, 
+                ModBannerComponent, ModOnlineTripComponent, ModLatestProductsComponent, 
                 ModSaleProductsComponent, ModNewsLetterComponent, WidFooterComponent,
                 ModSidebarComponent, ModListProductsComponent, ModLoginComponent, ModCartComponent,ModContactComponent ,
                 ModRegisterComponent, AdminHomeComponent, ModAdminLeftSidebarComponent,
@@ -90,7 +96,8 @@ import { ModAdminUserFormComponent } from './modules/mod_admin_user_form.compone
                 AdminProductFormComponent, ModAdminProductFormComponent,AdminUserFormComponent, ModAdminUserFormComponent, ModPagingComponent,
                 AdminComponent
                 ],
-  providers: [ ProductService, UserService ],
+  providers: [ ProductService, UserService, PartnerService, OrderService, OrderDetailService,
+              CustomerService, CommentService, CateProductService ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

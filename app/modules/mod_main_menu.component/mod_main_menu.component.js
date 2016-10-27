@@ -9,8 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var service_cate_product_1 = require('../../services/service_cate_product/service_cate_product');
 var ModMainMenuComponent = (function () {
-    function ModMainMenuComponent() {
+    function ModMainMenuComponent(service_cate_product) {
+        var _this = this;
+        this.service_cate_product = service_cate_product;
+        this.service_cate_product.getListCateProductPromise().then(function (list) { return _this.list_cate_product_display
+            = list.filter(function (item) { return item.status == 1; }); });
     }
     ModMainMenuComponent.prototype.ngOnInit = function () { };
     ModMainMenuComponent = __decorate([
@@ -19,7 +24,7 @@ var ModMainMenuComponent = (function () {
             selector: 'mod_main_menu',
             templateUrl: 'mod_main_menu.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [service_cate_product_1.CateProductService])
     ], ModMainMenuComponent);
     return ModMainMenuComponent;
 }());
